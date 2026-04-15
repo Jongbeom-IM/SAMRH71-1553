@@ -1,0 +1,6 @@
+C:/Users/User/Documents/research/SAMRH71-1553/_build/SAMRH71/default/CMakeFiles/SAMRH71_default_default_XC32_compile.dir
+C:/Users/User/Documents/research/SAMRH71-1553/_build/SAMRH71/default/CMakeFiles/SAMRH71_default_image_Ws3vy3Sj.dir
+C:/Users/User/Documents/research/SAMRH71-1553/_build/SAMRH71/default/CMakeFiles/SAMRH71_default_Bin2Hex.dir
+C:/Users/User/Documents/research/SAMRH71-1553/_build/SAMRH71/default/CMakeFiles/merge_loadable_files.dir
+C:/Users/User/Documents/research/SAMRH71-1553/_build/SAMRH71/default/CMakeFiles/edit_cache.dir
+C:/Users/User/Documents/research/SAMRH71-1553/_build/SAMRH71/default/CMakeFiles/rebuild_cache.dir
