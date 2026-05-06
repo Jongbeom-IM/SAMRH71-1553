@@ -1,4 +1,5 @@
 {
     "mplab.clangd.compileCommandsDir": "${workspaceFolder}\\_build\\SAMRH71\\default",
-    "mplab.clangd.path": "c:\\Program Files\\Microchip\\xc32\\v5.00\\bin\\xc32-clangd.exe"
+    "mplab.clangd.path": "c:\\Program Files\\Microchip\\xc32\\v5.00\\bin\\xc32-clangd.exe",
+    "cmake.sourceDirectory": "C:/Users/User/Documents/research/SAMRH71-1553/cmake/SAMRH71/default"
 }

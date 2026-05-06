@@ -53,8 +53,14 @@
 #include "peripheral/pio/plib_pio.h"
 #include "peripheral/matrix/plib_matrix.h"
 #include "peripheral/nvic/plib_nvic.h"
+#include "peripheral/xdmac/plib_xdmac.h"
+#include "peripheral/flexcom/usart/plib_flexcom3_usart.h"
+#include "peripheral/flexcom/usart/plib_flexcom4_usart.h"
+#include "peripheral/flexcom/usart/plib_flexcom5_usart.h"
 #include "peripheral/1553/plib_ip1553.h"
+#include "peripheral/flexcom/usart/plib_flexcom0_usart.h"
 #include "peripheral/flexcom/usart/plib_flexcom1_usart.h"
+#include "peripheral/flexcom/usart/plib_flexcom2_usart.h"
 
 // DOM-IGNORE-BEGIN
 #ifdef __cplusplus  // Provide C++ Compatibility
@@ -71,7 +77,7 @@ extern "C" {
 #define DEVICE_SERIES        "SAMRH71"
 
 /* CPU clock frequency */
-#define CPU_CLOCK_FREQUENCY 100000000U
+#define CPU_CLOCK_FREQUENCY 120000000U
 
 // *****************************************************************************
 // *****************************************************************************

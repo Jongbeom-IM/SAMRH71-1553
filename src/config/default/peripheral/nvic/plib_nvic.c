@@ -59,8 +59,22 @@ void NVIC_Initialize( void )
 
     /* Enable the interrupt sources and configure the priorities as configured
      * from within the "Interrupt Manager" of MHC. */
+    NVIC_SetPriority(FLEXCOM0_IRQn, 7);
+    NVIC_EnableIRQ(FLEXCOM0_IRQn);
     NVIC_SetPriority(PIOC_IRQn, 7);
     NVIC_EnableIRQ(PIOC_IRQn);
+    NVIC_SetPriority(FLEXCOM2_IRQn, 7);
+    NVIC_EnableIRQ(FLEXCOM2_IRQn);
+    NVIC_SetPriority(FLEXCOM3_IRQn, 7);
+    NVIC_EnableIRQ(FLEXCOM3_IRQn);
+    NVIC_SetPriority(FLEXCOM4_IRQn, 7);
+    NVIC_EnableIRQ(FLEXCOM4_IRQn);
+    NVIC_SetPriority(FLEXCOM5_IRQn, 7);
+    NVIC_EnableIRQ(FLEXCOM5_IRQn);
+    NVIC_SetPriority(XDMAC_IRQn, 7);
+    NVIC_EnableIRQ(XDMAC_IRQn);
+    NVIC_SetPriority(IP1553_IRQn, 7);
+    NVIC_EnableIRQ(IP1553_IRQn);
 
     /* Enable Usage fault */
     SCB->SHCSR |= (SCB_SHCSR_USGFAULTENA_Msk);

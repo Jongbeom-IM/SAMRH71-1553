@@ -114,50 +114,6 @@ static void rcTrimCalibrationSequence(void)
     __DSB();
     __ISB();
 }
-static void rc2ckTrimCalibrationSequence(void)
-{
-    // Compute calibration value using ftrim and ttrim from GPNVM_WORD
-    uint32_t calibSec4 = ( ((gpnvm_table[1] & FUSES_USER_WORD_1_RC2_FTRIM_4MHZ_Msk) >> FUSES_USER_WORD_1_RC2_FTRIM_4MHZ_Pos) << 2U ) |\
-                          ((gpnvm_table[1] & FUSES_USER_WORD_1_RC2_TTRIM_Msk) >> FUSES_USER_WORD_1_RC2_TTRIM_Pos) ;
-    uint32_t calibSec8 = ( ((gpnvm_table[1] & FUSES_USER_WORD_1_RC2_FTRIM_8MHZ_Msk) >> FUSES_USER_WORD_1_RC2_FTRIM_8MHZ_Pos) << 2U ) |\
-                          ((gpnvm_table[1] & FUSES_USER_WORD_1_RC2_TTRIM_Msk) >> FUSES_USER_WORD_1_RC2_TTRIM_Pos) ;
-    uint32_t calibSec10 = ( ((gpnvm_table[1] & FUSES_USER_WORD_1_RC2_FTRIM_10MHZ_Msk) >> FUSES_USER_WORD_1_RC2_FTRIM_10MHZ_Pos) << 2U ) |\
-                  ((gpnvm_table[1] & FUSES_USER_WORD_1_RC2_TTRIM_Msk) >> FUSES_USER_WORD_1_RC2_TTRIM_Pos) ;
-    uint32_t calibSec12 = ( ((gpnvm_table[1] & FUSES_USER_WORD_1_RC2_FTRIM_12MHZ_Msk) >> FUSES_USER_WORD_1_RC2_FTRIM_12MHZ_Pos) << 2U ) |\
-                  ((gpnvm_table[1] & FUSES_USER_WORD_1_RC2_TTRIM_Msk) >> FUSES_USER_WORD_1_RC2_TTRIM_Pos) ;
-
-    /* Configure the RC Oscillator frequency to select 4MHz */
-    PMC_REGS->PMC_OSC2 = (PMC_REGS->PMC_OSC2 & ~PMC_OSC2_OSCRCF_Msk) | PMC_OSC2_KEY_PASSWD | PMC_OSC2_OSCRCF_4_MHZ;
-
-    __DSB();
-    __ISB();
-
-    /* Set SEL for 8/10/12 MHz */
-    PMC_REGS->PMC_OCR2 |= (PMC_OCR2_SEL8_Msk | PMC_OCR2_SEL10_Msk | PMC_OCR2_SEL12_Msk);
-
-    /* Set Calib values for 8/10/12 MHz */
-    PMC_REGS->PMC_OSC2 = (PMC_REGS->PMC_OSC2 | CKGR_MOR_KEY_PASSWD) | PMC_OSC2_EN_WR_CALIB_Msk;
-    PMC_REGS->PMC_OCR2 = (PMC_REGS->PMC_OCR2 & ~(PMC_OCR2_CAL8_Msk | PMC_OCR2_CAL10_Msk | PMC_OCR2_CAL12_Msk) ) | \
-                         PMC_OCR2_CAL8(calibSec8) | PMC_OCR2_CAL10(calibSec10) | PMC_OCR2_CAL12(calibSec12);
-    PMC_REGS->PMC_OSC2 = (PMC_REGS->PMC_OSC2 | CKGR_MOR_KEY_PASSWD) & (~PMC_OSC2_EN_WR_CALIB_Msk);
-
-    __DSB();
-    __ISB();
-
-    /* Configure the RC Oscillator frequency to select 8MHz */
-    PMC_REGS->PMC_OSC2 = (PMC_REGS->PMC_OSC2 & ~PMC_OSC2_OSCRCF_Msk) | PMC_OSC2_KEY_PASSWD | PMC_OSC2_OSCRCF_8_MHZ;
-
-    __DSB();
-    __ISB();
-
-    /* Set SEL for 4 MHz */
-    PMC_REGS->PMC_OCR2 |= PMC_OCR2_SEL4_Msk;
-
-    /* Set Calib values for 4 MHz */
-    PMC_REGS->PMC_OSC2 = (PMC_REGS->PMC_OSC2 | CKGR_MOR_KEY_PASSWD) | PMC_OSC2_EN_WR_CALIB_Msk;
-    PMC_REGS->PMC_OCR2 = (PMC_REGS->PMC_OCR2 & ~(PMC_OCR2_CAL4_Msk)) | PMC_OCR2_CAL4(calibSec4);
-    PMC_REGS->PMC_OSC2 = (PMC_REGS->PMC_OSC2 | CKGR_MOR_KEY_PASSWD) & (~PMC_OSC2_EN_WR_CALIB_Msk);
-}
 /*********************************************************************************
 Initialize Slow Clock (SLCK)
 *********************************************************************************/
@@ -185,7 +141,7 @@ static void CLK_MainClockInitialize(void)
         rcTrimCalibrationSequence();
     }
     /* Configure the RC Oscillator frequency */
-    PMC_REGS->CKGR_MOR = (PMC_REGS->CKGR_MOR & ~CKGR_MOR_MOSCRCF_Msk) | CKGR_MOR_KEY_PASSWD | CKGR_MOR_MOSCRCF_10_MHZ;
+    PMC_REGS->CKGR_MOR = (PMC_REGS->CKGR_MOR & ~CKGR_MOR_MOSCRCF_Msk) | CKGR_MOR_KEY_PASSWD | CKGR_MOR_MOSCRCF_12_MHZ;
 
     while( (PMC_REGS->PMC_SR & PMC_SR_MOSCRCS_Msk) != PMC_SR_MOSCRCS_Msk)
     {
@@ -209,12 +165,7 @@ Initialize RC2 Clock (RC2CK)
 *********************************************************************************/
 static void CLK_RC2ClockInitialize(void)
 {
-    PMC_REGS->PMC_OSC2 |= PMC_OSC2_EN_Msk | PMC_OSC2_KEY_PASSWD;
-    if (crc_valid)
-    {
-        rc2ckTrimCalibrationSequence();
-    }
-    PMC_REGS->PMC_OSC2 = (PMC_REGS->PMC_OSC2 & ~PMC_OSC2_OSCRCF_Msk) | PMC_OSC2_OSCRCF_12_MHZ | PMC_OSC2_KEY_PASSWD;
+    PMC_REGS->PMC_OSC2 = PMC_OSC2_OSCRCF_12_MHZ | PMC_OSC2_KEY_PASSWD;
 }
 
 /*********************************************************************************
@@ -241,17 +192,6 @@ static void CLK_PLLxClockInitialize(void)
         /* Wait */
     }
 
-    /* Configure and Enable PLLB */
-    PMC_REGS->CKGR_PLLBR =  CKGR_PLLBR_SRCB_RC2CK |
-                            CKGR_PLLBR_FREQ_VCO_VCO0 |
-                            CKGR_PLLBR_PLLBCOUNT(0x3f) |
-                            CKGR_PLLBR_MULB(1) |
-                            CKGR_PLLBR_DIVB(2);
-
-    while ( (PMC_REGS->PMC_SR & PMC_SR_LOCKB_Msk) != PMC_SR_LOCKB_Msk)
-    {
-        /* Wait */
-    }
 }
 
 /*********************************************************************************
@@ -287,10 +227,16 @@ Initialize Peripheral Clock
 *********************************************************************************/
 static void CLK_PeripheralClockInitialize(void)
 {
+    PMC_REGS->PMC_PCR = PMC_PCR_EN_Msk | PMC_PCR_CMD_Msk | PMC_PCR_PID(7U); /* FLEXCOM0 */
     PMC_REGS->PMC_PCR = PMC_PCR_EN_Msk | PMC_PCR_CMD_Msk | PMC_PCR_PID(8U); /* FLEXCOM1 */
     PMC_REGS->PMC_PCR = PMC_PCR_EN_Msk | PMC_PCR_CMD_Msk | PMC_PCR_PID(10U); /* PIO */
+    PMC_REGS->PMC_PCR = PMC_PCR_EN_Msk | PMC_PCR_CMD_Msk | PMC_PCR_PID(13U); /* FLEXCOM2 */
+    PMC_REGS->PMC_PCR = PMC_PCR_EN_Msk | PMC_PCR_CMD_Msk | PMC_PCR_PID(14U); /* FLEXCOM3 */
+    PMC_REGS->PMC_PCR = PMC_PCR_EN_Msk | PMC_PCR_CMD_Msk | PMC_PCR_PID(15U); /* FLEXCOM4 */
+    PMC_REGS->PMC_PCR = PMC_PCR_EN_Msk | PMC_PCR_CMD_Msk | PMC_PCR_PID(22U); /* FLEXCOM5 */
+    PMC_REGS->PMC_PCR = PMC_PCR_EN_Msk | PMC_PCR_CMD_Msk | PMC_PCR_PID(64U); /* XDMAC */
     PMC_REGS->PMC_PCR = PMC_PCR_EN_Msk | PMC_PCR_CMD_Msk | PMC_PCR_PID(68)  /* IP1553 */
-        | PMC_PCR_GCLKEN_Msk | PMC_PCR_GCLKCSS_PLLB_CLK | PMC_PCR_GCLKDIV(0);
+        | PMC_PCR_GCLKEN_Msk | PMC_PCR_GCLKCSS_MCK_CLK | PMC_PCR_GCLKDIV(4);
 }
 
 /*********************************************************************************

@@ -64,7 +64,15 @@ static volatile uint8_t portNumCb[7 + 1] = { 0, 0, 0, 3, 3, 3, 3, 3, };
 */
 void PIO_Initialize ( void )
 {
+ /* Port A Peripheral function A configuration */
+   PIOA_REGS->PIO_MSKR = 0x180044U;
+   PIOA_REGS->PIO_CFGR = 0x1U;
 
+
+
+ /* Port C Peripheral function A configuration */
+   PIOC_REGS->PIO_MSKR = 0x600603LU;
+   PIOC_REGS->PIO_CFGR = 0x1U;
 
  /* Port C Peripheral function GPIO configuration */
    PIOC_REGS->PIO_MSKR = 0xe0000000LU;

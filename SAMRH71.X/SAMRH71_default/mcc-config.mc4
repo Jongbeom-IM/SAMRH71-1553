@@ -8,14 +8,19 @@ modules:
 - cmsis
 - core
 - dfp
+- flexcom0
 - flexcom1
+- flexcom2
+- flexcom3
+- flexcom4
+- flexcom5
 - ip1553
 - stdio
 generatedFileHashHistoryMap:
 - file: ..\src\config\default\ATSAMRH71F20C.ld
   hash: 6107fb1326078731945ae979c334fcb61b7256a32a62c7c426f69bb85ad5b713
 - file: ..\src\config\default\definitions.h
-  hash: 2d77154297a51ee6da839ee82222e0f626754eed8d9e67f5da7e4fae9b136f41
+  hash: 2222dda6f10703d2a16fe8d3afa731e86debee366cf3bab13fcea2610b09c269
 - file: ..\src\config\default\device.h
   hash: 26a3417577d11b246f91797d56f2fded2a2870242c5ea6dd0a30d064c4205937
 - file: ..\src\config\default\device_cache.h
@@ -25,25 +30,45 @@ generatedFileHashHistoryMap:
 - file: ..\src\config\default\exceptions.c
   hash: d1fcd7158950bb6ce6461d093cfa2ab341af3e6ea0337a936aa3ee9da98c6e55
 - file: ..\src\config\default\initialization.c
-  hash: 5ab22eba2a8f283b4b95a704f68697270656e68690a44f87cc9f6e6b26d4b5a0
+  hash: ff324fd70ff27235c88c5edbffd261c0542e8f4e3392688ca125e9a2b4ff30ee
 - file: ..\src\config\default\interrupts.c
-  hash: 8a50a728228cf5de971eea494eb12b9ef0e568224edaf0652dc398c2a14bd109
+  hash: 463801ed871c3073f35eeec5bda6577882aca596e40c230a7e8f35d53e5306fe
 - file: ..\src\config\default\interrupts.h
-  hash: 78c2f9d2a2624cf0e76f615357bf1d725a31c0110ef034afe6541e9f3e7bfa64
+  hash: d41cbe6abd98ebcd44fb30a8359207c3be3c9948f8ff25c8f3a90291c3bcc1ca
 - file: ..\src\config\default\libc_syscalls.c
   hash: c9afc1b1257829415a1a6746ce3744f0a768b339d59fff2ab3ca1fab58b2a916
 - file: ..\src\config\default\peripheral\1553\plib_ip1553.c
-  hash: dbd927b252c2518758e3a10a381e307e3456bda72de07a82ab65208db37c8293
+  hash: 0e0ef3bd636becf035c5b8efc8ace8128d799deb8c9bca7ada3da3f09baf9ccc
 - file: ..\src\config\default\peripheral\1553\plib_ip1553.h
-  hash: 03709a1213bc3618cdeb82fa7b9941c6f77338af499fba5e2cb63751c7ba71b0
+  hash: 310344bc8bcecf93cf4f65a3daadcabe06c4e3b1b1b49ce0d626162c09ed0113
 - file: ..\src\config\default\peripheral\clk\plib_clk.c
-  hash: 60dc04759d8e307ed28a8e869bf4173d6807ccaf21e26b9608a5d30c385e2e47
+  hash: 783c9e253a80a82cc4b48c4d13d1eec1905410a1001179fdd963b8fc65a4c3ae
 - file: ..\src\config\default\peripheral\clk\plib_clk.h
   hash: 0e259c8d2ad66189ae04de33dcc8fba9724409aa6cebf9ddc818ce9d7d3d3767
+- file: ..\src\config\default\peripheral\flexcom\usart\plib_flexcom0_usart.c
+  hash: 6da58fe9a72a7a1eab078b3f33cff433be08ab8027cfe04de3d94e8b9bc6bc25
+- file: ..\src\config\default\peripheral\flexcom\usart\plib_flexcom0_usart.h
+  hash: 616c507f01814ff1378ae4cf9b555e996b45d35011f6eede3b9d9c23d3fa1edf
 - file: ..\src\config\default\peripheral\flexcom\usart\plib_flexcom1_usart.c
-  hash: 96e49493739d079c1956a7c3a408382f808cbc0e59a09a8d3df4ce35d66ac88d
+  hash: fa9b5c76adef29b51debbb6cc3cb7d1a1fdac97e4a84265d947f388be025e381
 - file: ..\src\config\default\peripheral\flexcom\usart\plib_flexcom1_usart.h
-  hash: 249a9a9077b0b131ecef797c4a5da2a1c90acb5a7a73917417a0715826719000
+  hash: d8841629ff222dac23dd7188840b6b62fbc69e7f6fd9c10201b19f81ed956e89
+- file: ..\src\config\default\peripheral\flexcom\usart\plib_flexcom2_usart.c
+  hash: cec952ae12a22c07f83365212b48ffb9c6539d2472724c6511e4b0c29c66d578
+- file: ..\src\config\default\peripheral\flexcom\usart\plib_flexcom2_usart.h
+  hash: 5f7f9dcafd79419bc0d5203422c20f08343c2f4ef82c26693efa43c36d65ef44
+- file: ..\src\config\default\peripheral\flexcom\usart\plib_flexcom3_usart.c
+  hash: f263c1556a11c1bec9ea26bdaf0259af1cf2b69f5bd44e745bb225fc961288e6
+- file: ..\src\config\default\peripheral\flexcom\usart\plib_flexcom3_usart.h
+  hash: d0810bcfe128e2f41d2a798b01a0a6092ba7b5bea28640ae7ca7bdd0f0215ba3
+- file: ..\src\config\default\peripheral\flexcom\usart\plib_flexcom4_usart.c
+  hash: da6000767644990e993caa74eef8c5a65cfbf35b752d58237967b8961977567a
+- file: ..\src\config\default\peripheral\flexcom\usart\plib_flexcom4_usart.h
+  hash: 1d76afb641649763edcf8a3041ec266b7dc35d33a9e2449d7090566e0cea9c51
+- file: ..\src\config\default\peripheral\flexcom\usart\plib_flexcom5_usart.c
+  hash: 091c4a74f7d88ccd7d04925a6225f36b4b26fcd68c3bb6a8b80c47a154082b58
+- file: ..\src\config\default\peripheral\flexcom\usart\plib_flexcom5_usart.h
+  hash: 3f1b67d8fcc27da0e5ee194c7366259aa00f6953894e4791fe17f0933a4961bc
 - file: ..\src\config\default\peripheral\flexcom\usart\plib_flexcom_usart_local.h
   hash: 44c68d2efb80f2837e7bbcb39073972a6672c61ea2daf8f63e8c7e7da6e1208c
 - file: ..\src\config\default\peripheral\matrix\plib_matrix.c
@@ -51,15 +76,21 @@ generatedFileHashHistoryMap:
 - file: ..\src\config\default\peripheral\matrix\plib_matrix.h
   hash: 614d7aa46e9fbf009aa3a23a590a82d2541d6f03595a20e1409511b3e2378f87
 - file: ..\src\config\default\peripheral\nvic\plib_nvic.c
-  hash: 03216667547036c87d8ab3e75670b09507d22d8ae22e18a64a3328419ab8ac90
+  hash: f9859e181cdeb403f39500e1d1c3f1308b1f721e241a25e122ab4c2537c3c914
 - file: ..\src\config\default\peripheral\nvic\plib_nvic.h
   hash: 9936ac782115af41003255283fa2f603f4ff2212d16275b7c80ea8d067a9e208
 - file: ..\src\config\default\peripheral\pio\plib_pio.c
-  hash: 6accf66e95c674857cd9ffe3b56d7d00b2b6e840fa11aa17c3f0c3131d1ded05
+  hash: 74f74688ba6887a5ba2b391a4d1991d3c167710b5cc29c82672e3bc40929796f
 - file: ..\src\config\default\peripheral\pio\plib_pio.h
   hash: 89fafc420e5adb04eb0c023b74a7b8b4daf96e83bb02a420c2e76ad6f06eb594
+- file: ..\src\config\default\peripheral\xdmac\plib_xdmac.c
+  hash: 6af1cb9e7958fc501ccdd3edcb3b3c99d8eb473cc9af96df7508d3b7790bffc0
+- file: ..\src\config\default\peripheral\xdmac\plib_xdmac.h
+  hash: ab98a8ab9dbff639831bbb31759475b84268d576cb45cfa4b84eb77e830b141b
+- file: ..\src\config\default\peripheral\xdmac\plib_xdmac_common.h
+  hash: 36a0f96ea0c5be39dec6d138bb799581e28321fc9d46f1cec049812ec67e146f
 - file: ..\src\config\default\pin_configurations.csv
-  hash: 0bf3f7478fd65e5c4bd15e6e62beeeed9aec2f23a15989d73625d31852066ef3
+  hash: 1d364acab8746e36dacd5117f0474edddafa406b6a45351f4a600f6a97c08f97
 - file: ..\src\config\default\startup_xc32.c
   hash: f10ed03c074bfc68b0d9e56c3ee0fd8117624276c1adeb9158deef97363158ee
 - file: ..\src\config\default\stdio\xc32_monitor.c

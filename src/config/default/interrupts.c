@@ -78,7 +78,7 @@ void __attribute__((optimize("-O1"), long_call, noreturn, used))Dummy_Handler(vo
 }
 
 /* MISRAC 2023 deviation block start */
-/* MISRA C-2023 Rule 8.6 deviated 74 times.  Deviation record ID -  H3_MISRAC_2023_R_8_6_DR_1 */
+/* MISRA C-2023 Rule 8.6 deviated 67 times.  Deviation record ID -  H3_MISRAC_2023_R_8_6_DR_1 */
 /* Device vectors list dummy definition*/
 extern void SVCall_Handler             ( void ) __attribute__((weak, alias("Dummy_Handler"),noreturn));
 extern void PendSV_Handler             ( void ) __attribute__((weak, alias("Dummy_Handler"),noreturn));
@@ -90,21 +90,16 @@ extern void RTT_Handler                ( void ) __attribute__((weak, alias("Dumm
 extern void WDT_Handler                ( void ) __attribute__((weak, alias("Dummy_Handler"),noreturn));
 extern void PMC_Handler                ( void ) __attribute__((weak, alias("Dummy_Handler"),noreturn));
 extern void MATRIX0_Handler            ( void ) __attribute__((weak, alias("Dummy_Handler"),noreturn));
-extern void FLEXCOM0_Handler           ( void ) __attribute__((weak, alias("Dummy_Handler"),noreturn));
 extern void FLEXCOM1_InterruptHandler  ( void ) __attribute__((weak, alias("Dummy_Handler"),noreturn));
 extern void NMIC_Handler               ( void ) __attribute__((weak, alias("Dummy_Handler"),noreturn));
 extern void PIOA_Handler               ( void ) __attribute__((weak, alias("Dummy_Handler"),noreturn));
 extern void PIOB_Handler               ( void ) __attribute__((weak, alias("Dummy_Handler"),noreturn));
-extern void FLEXCOM2_Handler           ( void ) __attribute__((weak, alias("Dummy_Handler"),noreturn));
-extern void FLEXCOM3_Handler           ( void ) __attribute__((weak, alias("Dummy_Handler"),noreturn));
-extern void FLEXCOM4_Handler           ( void ) __attribute__((weak, alias("Dummy_Handler"),noreturn));
 extern void PIOD_Handler               ( void ) __attribute__((weak, alias("Dummy_Handler"),noreturn));
 extern void PIOE_Handler               ( void ) __attribute__((weak, alias("Dummy_Handler"),noreturn));
 extern void CCW_Handler                ( void ) __attribute__((weak, alias("Dummy_Handler"),noreturn));
 extern void CCF_Handler                ( void ) __attribute__((weak, alias("Dummy_Handler"),noreturn));
 extern void FPU_Handler                ( void ) __attribute__((weak, alias("Dummy_Handler"),noreturn));
 extern void IXC_Handler                ( void ) __attribute__((weak, alias("Dummy_Handler"),noreturn));
-extern void FLEXCOM5_Handler           ( void ) __attribute__((weak, alias("Dummy_Handler"),noreturn));
 extern void FLEXCOM6_Handler           ( void ) __attribute__((weak, alias("Dummy_Handler"),noreturn));
 extern void FLEXCOM7_Handler           ( void ) __attribute__((weak, alias("Dummy_Handler"),noreturn));
 extern void TC0_CH0_Handler            ( void ) __attribute__((weak, alias("Dummy_Handler"),noreturn));
@@ -145,9 +140,7 @@ extern void HEMC_INTFIX_Handler        ( void ) __attribute__((weak, alias("Dumm
 extern void HEMC_INTNOFIX_Handler      ( void ) __attribute__((weak, alias("Dummy_Handler"),noreturn));
 extern void SFR_Handler                ( void ) __attribute__((weak, alias("Dummy_Handler"),noreturn));
 extern void TRNG_Handler               ( void ) __attribute__((weak, alias("Dummy_Handler"),noreturn));
-extern void XDMAC_Handler              ( void ) __attribute__((weak, alias("Dummy_Handler"),noreturn));
 extern void SPW_Handler                ( void ) __attribute__((weak, alias("Dummy_Handler"),noreturn));
-extern void IP1553_Handler             ( void ) __attribute__((weak, alias("Dummy_Handler"),noreturn));
 extern void GMAC_Handler               ( void ) __attribute__((weak, alias("Dummy_Handler"),noreturn));
 extern void GMAC_Q1_Handler            ( void ) __attribute__((weak, alias("Dummy_Handler"),noreturn));
 extern void GMAC_Q2_Handler            ( void ) __attribute__((weak, alias("Dummy_Handler"),noreturn));
@@ -163,7 +156,7 @@ extern void GMAC_Q5_Handler            ( void ) __attribute__((weak, alias("Dumm
 
 
 /* MISRAC 2023 deviation block start */
-/* MISRA C-2023 Rule 2.8 deviated 74 times.  Deviation record ID -  H3_MISRAC_2023_R_2_8_DR_1 */
+/* MISRA C-2023 Rule 2.8 deviated 67 times.  Deviation record ID -  H3_MISRAC_2023_R_2_8_DR_1 */
 
 __attribute__ ((section(".vectors"), used))
 const H3DeviceVectors exception_table=
@@ -188,22 +181,22 @@ const H3DeviceVectors exception_table=
     .pfnWDT_Handler                = WDT_Handler,
     .pfnPMC_Handler                = PMC_Handler,
     .pfnMATRIX0_Handler            = MATRIX0_Handler,
-    .pfnFLEXCOM0_Handler           = FLEXCOM0_Handler,
+    .pfnFLEXCOM0_Handler           = FLEXCOM0_InterruptHandler,
     .pfnFLEXCOM1_Handler           = FLEXCOM1_InterruptHandler,
     .pfnNMIC_Handler               = NMIC_Handler,
     .pfnPIOA_Handler               = PIOA_Handler,
     .pfnPIOB_Handler               = PIOB_Handler,
     .pfnPIOC_Handler               = PIOC_InterruptHandler,
-    .pfnFLEXCOM2_Handler           = FLEXCOM2_Handler,
-    .pfnFLEXCOM3_Handler           = FLEXCOM3_Handler,
-    .pfnFLEXCOM4_Handler           = FLEXCOM4_Handler,
+    .pfnFLEXCOM2_Handler           = FLEXCOM2_InterruptHandler,
+    .pfnFLEXCOM3_Handler           = FLEXCOM3_InterruptHandler,
+    .pfnFLEXCOM4_Handler           = FLEXCOM4_InterruptHandler,
     .pfnPIOD_Handler               = PIOD_Handler,
     .pfnPIOE_Handler               = PIOE_Handler,
     .pfnCCW_Handler                = CCW_Handler,
     .pfnCCF_Handler                = CCF_Handler,
     .pfnFPU_Handler                = FPU_Handler,
     .pfnIXC_Handler                = IXC_Handler,
-    .pfnFLEXCOM5_Handler           = FLEXCOM5_Handler,
+    .pfnFLEXCOM5_Handler           = FLEXCOM5_InterruptHandler,
     .pfnFLEXCOM6_Handler           = FLEXCOM6_Handler,
     .pfnFLEXCOM7_Handler           = FLEXCOM7_Handler,
     .pfnTC0_CH0_Handler            = TC0_CH0_Handler,
@@ -244,9 +237,9 @@ const H3DeviceVectors exception_table=
     .pfnHEMC_INTNOFIX_Handler      = HEMC_INTNOFIX_Handler,
     .pfnSFR_Handler                = SFR_Handler,
     .pfnTRNG_Handler               = TRNG_Handler,
-    .pfnXDMAC_Handler              = XDMAC_Handler,
+    .pfnXDMAC_Handler              = XDMAC_InterruptHandler,
     .pfnSPW_Handler                = SPW_Handler,
-    .pfnIP1553_Handler             = IP1553_Handler,
+    .pfnIP1553_Handler             = IP1553_InterruptHandler,
     .pfnGMAC_Handler               = GMAC_Handler,
     .pfnGMAC_Q1_Handler            = GMAC_Q1_Handler,
     .pfnGMAC_Q2_Handler            = GMAC_Q2_Handler,

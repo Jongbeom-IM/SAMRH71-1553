@@ -10,7 +10,7 @@
 // *****************************************************************************
 // *****************************************************************************
 
-extern volatile uint8_t MODE;  // 0: waiting, 1: Normal, 2: Mode1, 3: Mode2
+extern volatile bool SYSTEM_PAUSED;
 
 // *****************************************************************************
 // *****************************************************************************
@@ -31,15 +31,23 @@ void delay_ms(uint32_t ms);
 void delay_us(uint32_t us);
 
 /**
- * @brief Print system information and current mode
+ * @brief Print system information and current state
  */
 void Print_system_info(void);
 
 /**
- * @brief Button interrupt callback to set mode
+ * @brief Button interrupt callback
  * @param pin The pin that triggered the interrupt
  * @param context User-defined context (not used)
  */
 void Button_Callback(PIO_PIN pin, uintptr_t context);
 
+/**
+ * @brief Play button interrupt callback to toggle pause state
+ * @param pin The pin that triggered the interrupt
+ * @param context User-defined context (not used)
+ */
+void PlayCallback(PIO_PIN pin, uintptr_t context);
+
 #endif /* DEFAULT_FUNCTION_H */
+

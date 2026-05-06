@@ -3,11 +3,11 @@ Pin Number,Pin ID,Custom Name,Function,Direction,Latch,Open Drain,PIO Interrupt,
 4,PF30,,FLEXCOM1_IO0,n/a,n/a,No,Disabled,No,No,Glitch Filter,0x0
 9,PA0,,Available,In,,,,,,,
 10,PA1,,Available,In,,,,,,,
-11,PA2,,Available,In,,,,,,,
+11,PA2,,FLEXCOM2_IO0,n/a,n/a,No,Disabled,No,No,Glitch Filter,0x0
 12,PA3,,Available,In,,,,,,,
 13,PA4,,Available,In,,,,,,,
 14,PA5,,Available,In,,,,,,,
-15,PA6,,Available,In,,,,,,,
+15,PA6,,FLEXCOM2_IO1,n/a,n/a,No,Disabled,No,No,Glitch Filter,0x0
 16,PA7,,Available,In,,,,,,,
 17,PA8,,Available,In,,,,,,,
 18,PA9,,Available,In,,,,,,,
@@ -17,8 +17,8 @@ Pin Number,Pin ID,Custom Name,Function,Direction,Latch,Open Drain,PIO Interrupt,
 22,PA13,,Available,In,,,,,,,
 26,PA16,,Available,In,,,,,,,
 27,PA17,,Available,In,,,,,,,
-29,PA19,,Available,In,,,,,,,
-30,PA20,,Available,In,,,,,,,
+29,PA19,,FLEXCOM3_IO1,n/a,n/a,No,Disabled,No,No,Glitch Filter,0x0
+30,PA20,,FLEXCOM3_IO0,n/a,n/a,No,Disabled,No,No,Glitch Filter,0x0
 31,PA21,,Available,In,,,,,,,
 34,PA22,,Available,In,,,,,,,
 35,PA23,,Available,In,,,,,,,
@@ -57,8 +57,8 @@ Pin Number,Pin ID,Custom Name,Function,Direction,Latch,Open Drain,PIO Interrupt,
 98,PB27,,Available,In,,,,,,,
 99,PB28,,Available,In,,,,,,,
 100,PB29,,Available,In,,,,,,,
-101,PC0,,Available,In,,,,,,,
-102,PC1,,Available,In,,,,,,,
+101,PC0,,FLEXCOM4_IO0,n/a,n/a,No,Disabled,No,No,Glitch Filter,0x0
+102,PC1,,FLEXCOM4_IO1,n/a,n/a,No,Disabled,No,No,Glitch Filter,0x0
 103,PC2,,Available,In,,,,,,,
 104,PC3,,Available,In,,,,,,,
 105,PC4,,Available,In,,,,,,,
@@ -66,8 +66,8 @@ Pin Number,Pin ID,Custom Name,Function,Direction,Latch,Open Drain,PIO Interrupt,
 107,PC6,,Available,In,,,,,,,
 108,PC7,,Available,In,,,,,,,
 109,PC8,,Available,In,,,,,,,
-110,PC9,,Available,In,,,,,,,
-111,PC10,,Available,In,,,,,,,
+110,PC9,,FLEXCOM5_IO0,n/a,n/a,No,Disabled,No,No,Glitch Filter,0x0
+111,PC10,,FLEXCOM5_IO1,n/a,n/a,No,Disabled,No,No,Glitch Filter,0x0
 112,PC11,,Available,In,,,,,,,
 113,PC12,,Available,In,,,,,,,
 114,PC13,,Available,In,,,,,,,
@@ -78,8 +78,8 @@ Pin Number,Pin ID,Custom Name,Function,Direction,Latch,Open Drain,PIO Interrupt,
 119,PC18,,Available,In,,,,,,,
 120,PC19,,Available,In,,,,,,,
 121,PC20,,Available,In,,,,,,,
-122,PC21,,Available,In,,,,,,,
-123,PC22,,Available,In,,,,,,,
+122,PC21,,FLEXCOM0_IO0,n/a,n/a,No,Disabled,No,No,Glitch Filter,0x0
+123,PC22,,FLEXCOM0_IO1,n/a,n/a,No,Disabled,No,No,Glitch Filter,0x0
 124,PC23,,Available,In,,,,,,,
 125,PC24,,Available,In,,,,,,,
 126,PC25,,Available,In,,,,,,,

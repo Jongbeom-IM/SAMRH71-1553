@@ -144,6 +144,8 @@ void SYS_Initialize ( void* data )
 
     PIO_Initialize();
 
+    XDMAC_Initialize();
+
 
 
     MATRIX_Initialize();
@@ -152,9 +154,19 @@ void SYS_Initialize ( void* data )
 
 	WDT_REGS->WDT_MR = WDT_MR_WDDIS_Msk; 		// Disable WDT 
 
+    FLEXCOM3_USART_Initialize();
+
+    FLEXCOM4_USART_Initialize();
+
+    FLEXCOM5_USART_Initialize();
+
     IP1553_Initialize();
 
+    FLEXCOM0_USART_Initialize();
+
     FLEXCOM1_USART_Initialize();
+
+    FLEXCOM2_USART_Initialize();
 
 
     NVIC_Initialize();

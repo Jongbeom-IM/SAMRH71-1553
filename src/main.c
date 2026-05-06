@@ -25,19 +25,22 @@
 #include <stddef.h>                     // Defines NULL
 #include <stdbool.h>                    // Defines true
 #include <stdlib.h>                     // Defines EXIT_FAILURE
+#include <stdio.h>
 #include "definitions.h"                // SYS function prototypes
 #include "usr/default_function.h"       // Default functions
-#include "usr/ip1553_app.h"             // IP1553 Application
+#include "usr/ip1553_rt.h"              // IP1553 RT Mode Application
+#include "usr/circular_dma.h"           // Circular DMA 함수
+#include "usr/FLEXCOM_dma_types.h"     // FLEXCOM DMA 객체 타입
 
-// Global mode variable (defined here, declared extern in default_function.h)
-volatile uint8_t MODE = 0;              // 0: waiting, 1: Normal, 2: 1553 Test, 3: Mode2
+// Global mode variable (defined here, declared extern in default_funcstion.h)
+
 
 int main ( void )
 {
     /* Initialize all modules */
     SYS_Initialize ( NULL );
     /* Register button interrupt callbacks */
-    PIO_PinInterruptCallbackRegister(PIO_PIN_PC29, Button_Callback, 0);
+    PIO_PinInterruptCallbackRegister(PIO_PIN_PC29, PlayCallback, 0);
     PIO_PinInterruptCallbackRegister(PIO_PIN_PC30, Button_Callback, 0);
     PIO_PinInterruptCallbackRegister(PIO_PIN_PC31, Button_Callback, 0);
     
@@ -46,39 +49,33 @@ int main ( void )
     PIO_PinInterruptEnable(PIO_PIN_PC30);
     PIO_PinInterruptEnable(PIO_PIN_PC31);
     
+    /* Initialize Circular DMA for UART RX */
+    CircularDMA_RX_Init(&FLEXCOM0DmaObj);
+    CircularDMA_RX_Init(&FLEXCOM2DmaObj);
+    CircularDMA_RX_Init(&FLEXCOM3DmaObj);
+    CircularDMA_RX_Init(&FLEXCOM4DmaObj);
+
+    IP1553_RT_Test();
+    
     /* Wait for button press to select mode */
-    
-    while (MODE == 0){}
+    while (SYSTEM_PAUSED){}
     Print_system_info();
-    
-    /* Initialize IP1553 if mode 2 selected */
-    if (MODE == 2)
-    {
-        IP1553_App_Test();
-    }
     
     /* Main loop - runs after mode is selected */
     while (true)
     {
         /* Maintain state machines of all polled MPLAB Harmony modules. */
         SYS_Tasks ( );
-        
-        /* Mode-specific tasks */
-        switch (MODE)
+
+        if (SYSTEM_PAUSED)
         {
-            case 1:  /* Normal Mode */
-                break;
-                
-            case 2:  /* 1553 Test Mode */
-                /* IP1553 status polling can be added here */
-                break;
-                
-            case 3:  /* Mode 2 */
-                break;
-                
-            default:
-                break;
+          continue;
         }
+
+        PacketQueue_Push(&FLEXCOM0DmaObj);
+        PacketQueue_Push(&FLEXCOM2DmaObj);
+        PacketQueue_Push(&FLEXCOM3DmaObj);
+        PacketQueue_Push(&FLEXCOM4DmaObj);
     }
 
     /* Execution should not come here during normal operation */

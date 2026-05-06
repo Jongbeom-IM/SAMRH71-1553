@@ -24,7 +24,7 @@ data:
       - children:
         - attributes:
             id: core
-            value: '0'
+            value: '60000000'
           type: Dynamic
         type: Values
       type: Integer
@@ -35,7 +35,7 @@ data:
       - children:
         - attributes:
             id: core
-            value: 'true'
+            value: 'false'
           type: Dynamic
         type: Values
       type: Boolean
@@ -57,7 +57,7 @@ data:
       - children:
         - attributes:
             id: core
-            value: '50000000'
+            value: '60000000'
           type: Dynamic
         type: Values
       type: Integer
@@ -112,7 +112,7 @@ data:
       - children:
         - attributes:
             id: core
-            value: 'false'
+            value: 'true'
           type: Dynamic
         type: Values
       type: Boolean
@@ -123,7 +123,7 @@ data:
       - children:
         - attributes:
             id: core
-            value: FLEXCOM0_Handler
+            value: FLEXCOM0_InterruptHandler
           type: Dynamic
         type: Values
       type: String
@@ -134,7 +134,7 @@ data:
       - children:
         - attributes:
             id: core
-            value: 'false'
+            value: 'true'
           type: Dynamic
         type: Values
       type: Boolean
@@ -445,7 +445,7 @@ data:
       - children:
         - attributes:
             id: core
-            value: 0x0L
+            value: 0x600603L
           type: Dynamic
         type: Values
       type: String
@@ -908,7 +908,7 @@ data:
       children:
       - children:
         - attributes:
-            value: '0'
+            value: '4'
           type: User
         type: Values
       type: Integer
@@ -918,7 +918,7 @@ data:
       children:
       - children:
         - attributes:
-            value: '3'
+            value: '4'
           type: User
         type: Values
       type: KeyValueSet
@@ -960,7 +960,7 @@ data:
       children:
       - children:
         - attributes:
-            value: '2'
+            value: '0'
           type: User
         type: Values
       type: Integer
@@ -971,7 +971,7 @@ data:
       - children:
         - attributes:
             id: core
-            value: '12000000'
+            value: '0'
           type: Dynamic
         type: Values
       type: Integer
@@ -981,7 +981,7 @@ data:
       children:
       - children:
         - attributes:
-            value: '1'
+            value: '0'
           type: User
         type: Values
       type: Integer
@@ -991,7 +991,7 @@ data:
       children:
       - children:
         - attributes:
-            value: '1'
+            value: '0'
           type: User
         type: Values
       type: KeyValueSet
@@ -1002,7 +1002,7 @@ data:
       - children:
         - attributes:
             id: core
-            value: '12000000'
+            value: '0'
           type: Dynamic
         type: Values
       type: Integer
@@ -1057,6 +1057,2655 @@ data:
           type: User
         type: Values
       type: KeyValueSet
+    CLK_RC2CK_EN:
+      attributes:
+        id: CLK_RC2CK_EN
+      children:
+      - children:
+        - attributes:
+            value: 'false'
+          type: User
+        type: Values
+      type: Boolean
+    SYSTICK_PERIOD:
+      attributes:
+        id: SYSTICK_PERIOD
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0x1D4C0'
+          type: Dynamic
+        type: Values
+      type: String
+    SYSTICK_PERIOD_US:
+      attributes:
+        id: SYSTICK_PERIOD_US
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '1000'
+          type: Dynamic
+        type: Values
+      type: Integer
+    SYSTICK_PERIOD_MS:
+      attributes:
+        id: SYSTICK_PERIOD_MS
+      children:
+      - children:
+        - attributes:
+            id: max
+          children:
+          - type: Value
+            value: '139.81012'
+          type: Float
+        type: Attributes
+      type: Float
+    SYSTICK_CLOCK_FREQUENCY:
+      attributes:
+        id: SYSTICK_CLOCK_FREQUENCY
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '60000000'
+          type: Dynamic
+        type: Values
+      type: Integer
+    TC3_CH3_CLOCK_FREQUENCY:
+      attributes:
+        id: TC3_CH3_CLOCK_FREQUENCY
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0'
+          type: Dynamic
+        type: Values
+      type: Integer
+    TC1_CH1_CLOCK_FREQUENCY:
+      attributes:
+        id: TC1_CH1_CLOCK_FREQUENCY
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0'
+          type: Dynamic
+        type: Values
+      type: Integer
+    TC3_CH0_CLOCK_FREQUENCY:
+      attributes:
+        id: TC3_CH0_CLOCK_FREQUENCY
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0'
+          type: Dynamic
+        type: Values
+      type: Integer
+    TC2_CH0_CLOCK_FREQUENCY:
+      attributes:
+        id: TC2_CH0_CLOCK_FREQUENCY
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0'
+          type: Dynamic
+        type: Values
+      type: Integer
+    PIO_CLOCK_FREQUENCY:
+      attributes:
+        id: PIO_CLOCK_FREQUENCY
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '60000000'
+          type: Dynamic
+        type: Values
+      type: Integer
+    TC1_CH2_CLOCK_FREQUENCY:
+      attributes:
+        id: TC1_CH2_CLOCK_FREQUENCY
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0'
+          type: Dynamic
+        type: Values
+      type: Integer
+    TC0_CH2_CLOCK_FREQUENCY:
+      attributes:
+        id: TC0_CH2_CLOCK_FREQUENCY
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0'
+          type: Dynamic
+        type: Values
+      type: Integer
+    TC2_CH1_CLOCK_FREQUENCY:
+      attributes:
+        id: TC2_CH1_CLOCK_FREQUENCY
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0'
+          type: Dynamic
+        type: Values
+      type: Integer
+    TC2_CH2_CLOCK_FREQUENCY:
+      attributes:
+        id: TC2_CH2_CLOCK_FREQUENCY
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0'
+          type: Dynamic
+        type: Values
+      type: Integer
+    TC3_CH1_CLOCK_FREQUENCY:
+      attributes:
+        id: TC3_CH1_CLOCK_FREQUENCY
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0'
+          type: Dynamic
+        type: Values
+      type: Integer
+    TC0_CH0_CLOCK_FREQUENCY:
+      attributes:
+        id: TC0_CH0_CLOCK_FREQUENCY
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0'
+          type: Dynamic
+        type: Values
+      type: Integer
+    TC0_CH3_CLOCK_FREQUENCY:
+      attributes:
+        id: TC0_CH3_CLOCK_FREQUENCY
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0'
+          type: Dynamic
+        type: Values
+      type: Integer
+    TC0_CH1_CLOCK_FREQUENCY:
+      attributes:
+        id: TC0_CH1_CLOCK_FREQUENCY
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0'
+          type: Dynamic
+        type: Values
+      type: Integer
+    TC2_CH3_CLOCK_FREQUENCY:
+      attributes:
+        id: TC2_CH3_CLOCK_FREQUENCY
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0'
+          type: Dynamic
+        type: Values
+      type: Integer
+    TC1_CH3_CLOCK_FREQUENCY:
+      attributes:
+        id: TC1_CH3_CLOCK_FREQUENCY
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0'
+          type: Dynamic
+        type: Values
+      type: Integer
+    TC1_CH0_CLOCK_FREQUENCY:
+      attributes:
+        id: TC1_CH0_CLOCK_FREQUENCY
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0'
+          type: Dynamic
+        type: Values
+      type: Integer
+    TC3_CH2_CLOCK_FREQUENCY:
+      attributes:
+        id: TC3_CH2_CLOCK_FREQUENCY
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0'
+          type: Dynamic
+        type: Values
+      type: Integer
+    CLK_MCK_FREQ:
+      attributes:
+        id: CLK_MCK_FREQ
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '60000000'
+          type: Dynamic
+        type: Values
+      type: Integer
+    CPU_CLOCK_FREQUENCY:
+      attributes:
+        id: CPU_CLOCK_FREQUENCY
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '120000000'
+          type: Dynamic
+        type: Values
+      type: Integer
+    CLK_PLLACK_FREQ:
+      attributes:
+        id: CLK_PLLACK_FREQ
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '120000000'
+          type: Dynamic
+        type: Values
+      type: Integer
+    CLK_MAINCK_FREQ:
+      attributes:
+        id: CLK_MAINCK_FREQ
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '10000000'
+          type: Dynamic
+        - attributes:
+            value: '12000000'
+          type: User
+        type: Values
+      type: Integer
+    CLK_MAINCK_MOSCRCF:
+      attributes:
+        id: CLK_MAINCK_MOSCRCF
+      children:
+      - children:
+        - attributes:
+            value: '3'
+          type: User
+        type: Values
+      type: KeyValueSet
+    CLK_MAINCK_MOSCSEL:
+      attributes:
+        id: CLK_MAINCK_MOSCSEL
+      children:
+      - children:
+        - attributes:
+            value: '0'
+          type: User
+        type: Values
+      type: KeyValueSet
+    CLK_MAINCK_MOSCXTEN:
+      attributes:
+        id: CLK_MAINCK_MOSCXTEN
+      children:
+      - children:
+        - attributes:
+            value: 'false'
+          type: User
+        type: Values
+      type: Boolean
+    CLK_MAINCK_MOSCXTBY:
+      attributes:
+        id: CLK_MAINCK_MOSCXTBY
+      children:
+      - children:
+        - attributes:
+            value: 'false'
+          type: User
+        type: Values
+      type: Boolean
+    CLK_PLLACK_MULA:
+      attributes:
+        id: CLK_PLLACK_MULA
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '9'
+          type: Dynamic
+        - attributes:
+            value: '9'
+          type: User
+        type: Values
+      type: Integer
+    PIN_24_DRV:
+      attributes:
+        id: PIN_24_DRV
+      children:
+      - children:
+        - attributes:
+            value: '0'
+          type: User
+        type: Values
+      type: KeyValueSet
+    IP1553_INTERRUPT_ENABLE_UPDATE:
+      attributes:
+        id: IP1553_INTERRUPT_ENABLE_UPDATE
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'false'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    NVIC_68_0_ENABLE:
+      attributes:
+        id: NVIC_68_0_ENABLE
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    IP1553_INTERRUPT_ENABLE:
+      attributes:
+        id: IP1553_INTERRUPT_ENABLE
+      children:
+      - children:
+        - attributes:
+            id: ip1553
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    NVIC_68_0_HANDLER:
+      attributes:
+        id: NVIC_68_0_HANDLER
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: IP1553_InterruptHandler
+          type: Dynamic
+        type: Values
+      type: String
+    IP1553_INTERRUPT_HANDLER:
+      attributes:
+        id: IP1553_INTERRUPT_HANDLER
+      children:
+      - children:
+        - attributes:
+            id: ip1553
+            value: IP1553_InterruptHandler
+          type: Dynamic
+        type: Values
+      type: String
+    NVIC_68_0_HANDLER_LOCK:
+      attributes:
+        id: NVIC_68_0_HANDLER_LOCK
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    IP1553_INTERRUPT_HANDLER_LOCK:
+      attributes:
+        id: IP1553_INTERRUPT_HANDLER_LOCK
+      children:
+      - children:
+        - attributes:
+            id: ip1553
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    XDMAC_INTERRUPT_ENABLE_UPDATE:
+      attributes:
+        id: XDMAC_INTERRUPT_ENABLE_UPDATE
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'false'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    NVIC_64_0_ENABLE:
+      attributes:
+        id: NVIC_64_0_ENABLE
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    XDMAC_INTERRUPT_ENABLE:
+      attributes:
+        id: XDMAC_INTERRUPT_ENABLE
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    NVIC_64_0_HANDLER_LOCK:
+      attributes:
+        id: NVIC_64_0_HANDLER_LOCK
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    XDMAC_INTERRUPT_HANDLER_LOCK:
+      attributes:
+        id: XDMAC_INTERRUPT_HANDLER_LOCK
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    NVIC_64_0_HANDLER:
+      attributes:
+        id: NVIC_64_0_HANDLER
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: XDMAC_InterruptHandler
+          type: Dynamic
+        type: Values
+      type: String
+    XDMAC_INTERRUPT_HANDLER:
+      attributes:
+        id: XDMAC_INTERRUPT_HANDLER
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: XDMAC_InterruptHandler
+          type: Dynamic
+        type: Values
+      type: String
+    XDMAC_CLOCK_FREQUENCY:
+      attributes:
+        id: XDMAC_CLOCK_FREQUENCY
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '60000000'
+          type: Dynamic
+        type: Values
+      type: Integer
+    XDMAC_CLOCK_ENABLE:
+      attributes:
+        id: XDMAC_CLOCK_ENABLE
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    xdmacHeaderFile:
+      attributes:
+        id: xdmacHeaderFile
+      children:
+      - children:
+        - attributes:
+            id: enabled
+          children:
+          - type: Value
+            value: 'true'
+          type: Boolean
+        type: Attributes
+      type: File
+    xdmacCommonHeaderFile:
+      attributes:
+        id: xdmacCommonHeaderFile
+      children:
+      - children:
+        - attributes:
+            id: enabled
+          children:
+          - type: Value
+            value: 'true'
+          type: Boolean
+        type: Attributes
+      type: File
+    xdmacSourceFile:
+      attributes:
+        id: xdmacSourceFile
+      children:
+      - children:
+        - attributes:
+            id: enabled
+          children:
+          - type: Value
+            value: 'true'
+          type: Boolean
+        type: Attributes
+      type: File
+    xdmacSystemInitFile:
+      attributes:
+        id: xdmacSystemInitFile
+      children:
+      - children:
+        - attributes:
+            id: enabled
+          children:
+          - type: Value
+            value: 'true'
+          type: Boolean
+        type: Attributes
+      type: File
+    xdmacSystemDefFile:
+      attributes:
+        id: xdmacSystemDefFile
+      children:
+      - children:
+        - attributes:
+            id: enabled
+          children:
+          - type: Value
+            value: 'true'
+          type: Boolean
+        type: Attributes
+      type: File
+    FLEXCOM0_CLOCK_ENABLE:
+      attributes:
+        id: FLEXCOM0_CLOCK_ENABLE
+      children:
+      - children:
+        - attributes:
+            id: flexcom0
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    FLEXCOM3_CLOCK_ENABLE:
+      attributes:
+        id: FLEXCOM3_CLOCK_ENABLE
+      children:
+      - children:
+        - attributes:
+            id: flexcom3
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    FLEXCOM2_CLOCK_ENABLE:
+      attributes:
+        id: FLEXCOM2_CLOCK_ENABLE
+      children:
+      - children:
+        - attributes:
+            id: flexcom2
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    FLEXCOM4_CLOCK_ENABLE:
+      attributes:
+        id: FLEXCOM4_CLOCK_ENABLE
+      children:
+      - children:
+        - attributes:
+            id: flexcom4
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    FLEXCOM5_CLOCK_ENABLE:
+      attributes:
+        id: FLEXCOM5_CLOCK_ENABLE
+      children:
+      - children:
+        - attributes:
+            id: flexcom5
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    FLEXCOM4_INTERRUPT_ENABLE_UPDATE:
+      attributes:
+        id: FLEXCOM4_INTERRUPT_ENABLE_UPDATE
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'false'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    NVIC_15_0_ENABLE:
+      attributes:
+        id: NVIC_15_0_ENABLE
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    FLEXCOM4_INTERRUPT_ENABLE:
+      attributes:
+        id: FLEXCOM4_INTERRUPT_ENABLE
+      children:
+      - children:
+        - attributes:
+            id: flexcom4
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    NVIC_15_0_HANDLER:
+      attributes:
+        id: NVIC_15_0_HANDLER
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: FLEXCOM4_InterruptHandler
+          type: Dynamic
+        type: Values
+      type: String
+    FLEXCOM4_INTERRUPT_HANDLER:
+      attributes:
+        id: FLEXCOM4_INTERRUPT_HANDLER
+      children:
+      - children:
+        - attributes:
+            id: flexcom4
+            value: FLEXCOM4_InterruptHandler
+          type: Dynamic
+        type: Values
+      type: String
+    NVIC_15_0_HANDLER_LOCK:
+      attributes:
+        id: NVIC_15_0_HANDLER_LOCK
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    FLEXCOM4_INTERRUPT_HANDLER_LOCK:
+      attributes:
+        id: FLEXCOM4_INTERRUPT_HANDLER_LOCK
+      children:
+      - children:
+        - attributes:
+            id: flexcom4
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    FLEXCOM4_CLOCK_FREQUENCY:
+      attributes:
+        id: FLEXCOM4_CLOCK_FREQUENCY
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '60000000'
+          type: Dynamic
+        type: Values
+      type: Integer
+    FLEXCOM3_INTERRUPT_ENABLE_UPDATE:
+      attributes:
+        id: FLEXCOM3_INTERRUPT_ENABLE_UPDATE
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'false'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    NVIC_14_0_ENABLE:
+      attributes:
+        id: NVIC_14_0_ENABLE
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    FLEXCOM3_INTERRUPT_ENABLE:
+      attributes:
+        id: FLEXCOM3_INTERRUPT_ENABLE
+      children:
+      - children:
+        - attributes:
+            id: flexcom3
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    NVIC_14_0_HANDLER:
+      attributes:
+        id: NVIC_14_0_HANDLER
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: FLEXCOM3_InterruptHandler
+          type: Dynamic
+        type: Values
+      type: String
+    FLEXCOM3_INTERRUPT_HANDLER:
+      attributes:
+        id: FLEXCOM3_INTERRUPT_HANDLER
+      children:
+      - children:
+        - attributes:
+            id: flexcom3
+            value: FLEXCOM3_InterruptHandler
+          type: Dynamic
+        type: Values
+      type: String
+    NVIC_14_0_HANDLER_LOCK:
+      attributes:
+        id: NVIC_14_0_HANDLER_LOCK
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    FLEXCOM3_INTERRUPT_HANDLER_LOCK:
+      attributes:
+        id: FLEXCOM3_INTERRUPT_HANDLER_LOCK
+      children:
+      - children:
+        - attributes:
+            id: flexcom3
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    FLEXCOM3_CLOCK_FREQUENCY:
+      attributes:
+        id: FLEXCOM3_CLOCK_FREQUENCY
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '60000000'
+          type: Dynamic
+        type: Values
+      type: Integer
+    FLEXCOM2_INTERRUPT_ENABLE_UPDATE:
+      attributes:
+        id: FLEXCOM2_INTERRUPT_ENABLE_UPDATE
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'false'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    NVIC_13_0_ENABLE:
+      attributes:
+        id: NVIC_13_0_ENABLE
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    FLEXCOM2_INTERRUPT_ENABLE:
+      attributes:
+        id: FLEXCOM2_INTERRUPT_ENABLE
+      children:
+      - children:
+        - attributes:
+            id: flexcom2
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    NVIC_13_0_HANDLER:
+      attributes:
+        id: NVIC_13_0_HANDLER
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: FLEXCOM2_InterruptHandler
+          type: Dynamic
+        type: Values
+      type: String
+    FLEXCOM2_INTERRUPT_HANDLER:
+      attributes:
+        id: FLEXCOM2_INTERRUPT_HANDLER
+      children:
+      - children:
+        - attributes:
+            id: flexcom2
+            value: FLEXCOM2_InterruptHandler
+          type: Dynamic
+        type: Values
+      type: String
+    NVIC_13_0_HANDLER_LOCK:
+      attributes:
+        id: NVIC_13_0_HANDLER_LOCK
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    FLEXCOM2_INTERRUPT_HANDLER_LOCK:
+      attributes:
+        id: FLEXCOM2_INTERRUPT_HANDLER_LOCK
+      children:
+      - children:
+        - attributes:
+            id: flexcom2
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    FLEXCOM2_CLOCK_FREQUENCY:
+      attributes:
+        id: FLEXCOM2_CLOCK_FREQUENCY
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '60000000'
+          type: Dynamic
+        type: Values
+      type: Integer
+    FLEXCOM8_CLOCK_FREQUENCY:
+      attributes:
+        id: FLEXCOM8_CLOCK_FREQUENCY
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0'
+          type: Dynamic
+        type: Values
+      type: Integer
+    FLEXCOM8_INTERRUPT_ENABLE_UPDATE:
+      attributes:
+        id: FLEXCOM8_INTERRUPT_ENABLE_UPDATE
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    NVIC_45_0_ENABLE:
+      attributes:
+        id: NVIC_45_0_ENABLE
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'false'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    NVIC_45_0_HANDLER:
+      attributes:
+        id: NVIC_45_0_HANDLER
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: FLEXCOM8_Handler
+          type: Dynamic
+        type: Values
+      type: String
+    NVIC_45_0_HANDLER_LOCK:
+      attributes:
+        id: NVIC_45_0_HANDLER_LOCK
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'false'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    FLEXCOM0_INTERRUPT_ENABLE:
+      attributes:
+        id: FLEXCOM0_INTERRUPT_ENABLE
+      children:
+      - children:
+        - attributes:
+            id: flexcom0
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    FLEXCOM0_INTERRUPT_HANDLER:
+      attributes:
+        id: FLEXCOM0_INTERRUPT_HANDLER
+      children:
+      - children:
+        - attributes:
+            id: flexcom0
+            value: FLEXCOM0_InterruptHandler
+          type: Dynamic
+        type: Values
+      type: String
+    FLEXCOM0_INTERRUPT_HANDLER_LOCK:
+      attributes:
+        id: FLEXCOM0_INTERRUPT_HANDLER_LOCK
+      children:
+      - children:
+        - attributes:
+            id: flexcom0
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    FLEXCOM9_INTERRUPT_ENABLE_UPDATE:
+      attributes:
+        id: FLEXCOM9_INTERRUPT_ENABLE_UPDATE
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    NVIC_46_0_ENABLE:
+      attributes:
+        id: NVIC_46_0_ENABLE
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'false'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    NVIC_46_0_HANDLER:
+      attributes:
+        id: NVIC_46_0_HANDLER
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: FLEXCOM9_Handler
+          type: Dynamic
+        type: Values
+      type: String
+    NVIC_46_0_HANDLER_LOCK:
+      attributes:
+        id: NVIC_46_0_HANDLER_LOCK
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'false'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    FLEXCOM9_CLOCK_FREQUENCY:
+      attributes:
+        id: FLEXCOM9_CLOCK_FREQUENCY
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0'
+          type: Dynamic
+        type: Values
+      type: Integer
+    FLEXCOM7_INTERRUPT_ENABLE_UPDATE:
+      attributes:
+        id: FLEXCOM7_INTERRUPT_ENABLE_UPDATE
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    NVIC_24_0_ENABLE:
+      attributes:
+        id: NVIC_24_0_ENABLE
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'false'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    NVIC_24_0_HANDLER:
+      attributes:
+        id: NVIC_24_0_HANDLER
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: FLEXCOM7_Handler
+          type: Dynamic
+        type: Values
+      type: String
+    NVIC_24_0_HANDLER_LOCK:
+      attributes:
+        id: NVIC_24_0_HANDLER_LOCK
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'false'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    FLEXCOM7_CLOCK_FREQUENCY:
+      attributes:
+        id: FLEXCOM7_CLOCK_FREQUENCY
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0'
+          type: Dynamic
+        type: Values
+      type: Integer
+    FLEXCOM6_CLOCK_FREQUENCY:
+      attributes:
+        id: FLEXCOM6_CLOCK_FREQUENCY
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0'
+          type: Dynamic
+        type: Values
+      type: Integer
+    FLEXCOM6_INTERRUPT_ENABLE_UPDATE:
+      attributes:
+        id: FLEXCOM6_INTERRUPT_ENABLE_UPDATE
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    NVIC_23_0_ENABLE:
+      attributes:
+        id: NVIC_23_0_ENABLE
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'false'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    NVIC_23_0_HANDLER:
+      attributes:
+        id: NVIC_23_0_HANDLER
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: FLEXCOM6_Handler
+          type: Dynamic
+        type: Values
+      type: String
+    NVIC_23_0_HANDLER_LOCK:
+      attributes:
+        id: NVIC_23_0_HANDLER_LOCK
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'false'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    FLEXCOM5_CLOCK_FREQUENCY:
+      attributes:
+        id: FLEXCOM5_CLOCK_FREQUENCY
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '60000000'
+          type: Dynamic
+        type: Values
+      type: Integer
+    FLEXCOM5_INTERRUPT_ENABLE_UPDATE:
+      attributes:
+        id: FLEXCOM5_INTERRUPT_ENABLE_UPDATE
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'false'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    NVIC_22_0_ENABLE:
+      attributes:
+        id: NVIC_22_0_ENABLE
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    FLEXCOM5_INTERRUPT_ENABLE:
+      attributes:
+        id: FLEXCOM5_INTERRUPT_ENABLE
+      children:
+      - children:
+        - attributes:
+            id: flexcom5
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    NVIC_22_0_HANDLER:
+      attributes:
+        id: NVIC_22_0_HANDLER
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: FLEXCOM5_InterruptHandler
+          type: Dynamic
+        type: Values
+      type: String
+    FLEXCOM5_INTERRUPT_HANDLER:
+      attributes:
+        id: FLEXCOM5_INTERRUPT_HANDLER
+      children:
+      - children:
+        - attributes:
+            id: flexcom5
+            value: FLEXCOM5_InterruptHandler
+          type: Dynamic
+        type: Values
+      type: String
+    NVIC_22_0_HANDLER_LOCK:
+      attributes:
+        id: NVIC_22_0_HANDLER_LOCK
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    FLEXCOM5_INTERRUPT_HANDLER_LOCK:
+      attributes:
+        id: FLEXCOM5_INTERRUPT_HANDLER_LOCK
+      children:
+      - children:
+        - attributes:
+            id: flexcom5
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    PIN_122_FUNCTION_TYPE:
+      attributes:
+        id: PIN_122_FUNCTION_TYPE
+      children:
+      - children:
+        - attributes:
+            value: FLEXCOM0_IO0
+          type: User
+        type: Values
+      type: String
+    PIN_122_PERIPHERAL_FUNCTION:
+      attributes:
+        id: PIN_122_PERIPHERAL_FUNCTION
+      children:
+      - children:
+        - attributes:
+            value: A
+          type: User
+        type: Values
+      type: String
+    PIN_123_FUNCTION_TYPE:
+      attributes:
+        id: PIN_123_FUNCTION_TYPE
+      children:
+      - children:
+        - attributes:
+            value: FLEXCOM0_IO1
+          type: User
+        type: Values
+      type: String
+    PIN_123_PERIPHERAL_FUNCTION:
+      attributes:
+        id: PIN_123_PERIPHERAL_FUNCTION
+      children:
+      - children:
+        - attributes:
+            value: A
+          type: User
+        type: Values
+      type: String
+    PIN_11_FUNCTION_TYPE:
+      attributes:
+        id: PIN_11_FUNCTION_TYPE
+      children:
+      - children:
+        - attributes:
+            value: FLEXCOM2_IO0
+          type: User
+        type: Values
+      type: String
+    PORT_A_MSKR_ValueGPIO:
+      attributes:
+        id: PORT_A_MSKR_ValueGPIO
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0x0'
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_A_MSKR_ValueA:
+      attributes:
+        id: PORT_A_MSKR_ValueA
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0x180044'
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_A_MSKR_ValueB:
+      attributes:
+        id: PORT_A_MSKR_ValueB
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0x0'
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_A_MSKR_ValueC:
+      attributes:
+        id: PORT_A_MSKR_ValueC
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0x0'
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_A_MSKR_ValueD:
+      attributes:
+        id: PORT_A_MSKR_ValueD
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0x0'
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_A_MSKR_ValueE:
+      attributes:
+        id: PORT_A_MSKR_ValueE
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0x0'
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_A_MSKR_ValueF:
+      attributes:
+        id: PORT_A_MSKR_ValueF
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0x0'
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_A_MSKR_ValueG:
+      attributes:
+        id: PORT_A_MSKR_ValueG
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0x0'
+          type: Dynamic
+        type: Values
+      type: String
+    PIN_11_PERIPHERAL_FUNCTION:
+      attributes:
+        id: PIN_11_PERIPHERAL_FUNCTION
+      children:
+      - children:
+        - attributes:
+            value: A
+          type: User
+        type: Values
+      type: String
+    PIN_15_FUNCTION_TYPE:
+      attributes:
+        id: PIN_15_FUNCTION_TYPE
+      children:
+      - children:
+        - attributes:
+            value: FLEXCOM2_IO1
+          type: User
+        type: Values
+      type: String
+    PIN_15_PERIPHERAL_FUNCTION:
+      attributes:
+        id: PIN_15_PERIPHERAL_FUNCTION
+      children:
+      - children:
+        - attributes:
+            value: A
+          type: User
+        type: Values
+      type: String
+    PIN_30_FUNCTION_TYPE:
+      attributes:
+        id: PIN_30_FUNCTION_TYPE
+      children:
+      - children:
+        - attributes:
+            value: FLEXCOM3_IO0
+          type: User
+        type: Values
+      type: String
+    PIN_30_PERIPHERAL_FUNCTION:
+      attributes:
+        id: PIN_30_PERIPHERAL_FUNCTION
+      children:
+      - children:
+        - attributes:
+            value: A
+          type: User
+        type: Values
+      type: String
+    PIN_29_FUNCTION_TYPE:
+      attributes:
+        id: PIN_29_FUNCTION_TYPE
+      children:
+      - children:
+        - attributes:
+            value: FLEXCOM3_IO1
+          type: User
+        type: Values
+      type: String
+    PIN_29_PERIPHERAL_FUNCTION:
+      attributes:
+        id: PIN_29_PERIPHERAL_FUNCTION
+      children:
+      - children:
+        - attributes:
+            value: A
+          type: User
+        type: Values
+      type: String
+    PIN_110_FUNCTION_TYPE:
+      attributes:
+        id: PIN_110_FUNCTION_TYPE
+      children:
+      - children:
+        - attributes:
+            value: FLEXCOM5_IO0
+          type: User
+        type: Values
+      type: String
+    PIN_110_PERIPHERAL_FUNCTION:
+      attributes:
+        id: PIN_110_PERIPHERAL_FUNCTION
+      children:
+      - children:
+        - attributes:
+            value: A
+          type: User
+        type: Values
+      type: String
+    PIN_111_FUNCTION_TYPE:
+      attributes:
+        id: PIN_111_FUNCTION_TYPE
+      children:
+      - children:
+        - attributes:
+            value: FLEXCOM5_IO1
+          type: User
+        type: Values
+      type: String
+    PIN_111_PERIPHERAL_FUNCTION:
+      attributes:
+        id: PIN_111_PERIPHERAL_FUNCTION
+      children:
+      - children:
+        - attributes:
+            value: A
+          type: User
+        type: Values
+      type: String
+    PIN_101_FUNCTION_TYPE:
+      attributes:
+        id: PIN_101_FUNCTION_TYPE
+      children:
+      - children:
+        - attributes:
+            value: FLEXCOM4_IO0
+          type: User
+        type: Values
+      type: String
+    PIN_101_PERIPHERAL_FUNCTION:
+      attributes:
+        id: PIN_101_PERIPHERAL_FUNCTION
+      children:
+      - children:
+        - attributes:
+            value: A
+          type: User
+        type: Values
+      type: String
+    PIN_102_FUNCTION_TYPE:
+      attributes:
+        id: PIN_102_FUNCTION_TYPE
+      children:
+      - children:
+        - attributes:
+            value: FLEXCOM4_IO1
+          type: User
+        type: Values
+      type: String
+    PIN_102_PERIPHERAL_FUNCTION:
+      attributes:
+        id: PIN_102_PERIPHERAL_FUNCTION
+      children:
+      - children:
+        - attributes:
+            value: A
+          type: User
+        type: Values
+      type: String
+    PIN_69_FUNCTION_TYPE:
+      attributes:
+        id: PIN_69_FUNCTION_TYPE
+      children:
+      - children:
+        - attributes:
+            value: ''
+          type: User
+        type: Values
+      type: String
+    PORT_B_MSKR_ValueGPIO:
+      attributes:
+        id: PORT_B_MSKR_ValueGPIO
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0x0'
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_B_MSKR_ValueA:
+      attributes:
+        id: PORT_B_MSKR_ValueA
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0x0'
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_B_MSKR_ValueB:
+      attributes:
+        id: PORT_B_MSKR_ValueB
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0x0'
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_B_MSKR_ValueC:
+      attributes:
+        id: PORT_B_MSKR_ValueC
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0x0'
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_B_MSKR_ValueD:
+      attributes:
+        id: PORT_B_MSKR_ValueD
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0x0'
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_B_MSKR_ValueE:
+      attributes:
+        id: PORT_B_MSKR_ValueE
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0x0'
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_B_MSKR_ValueF:
+      attributes:
+        id: PORT_B_MSKR_ValueF
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0x0'
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_B_MSKR_ValueG:
+      attributes:
+        id: PORT_B_MSKR_ValueG
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0x0'
+          type: Dynamic
+        type: Values
+      type: String
+    PIN_69_PERIPHERAL_FUNCTION:
+      attributes:
+        id: PIN_69_PERIPHERAL_FUNCTION
+      children:
+      - children:
+        - attributes:
+            value: ''
+          type: User
+        type: Values
+      type: String
+    PIN_70_FUNCTION_TYPE:
+      attributes:
+        id: PIN_70_FUNCTION_TYPE
+      children:
+      - children:
+        - attributes:
+            value: ''
+          type: User
+        type: Values
+      type: String
+    PIN_70_PERIPHERAL_FUNCTION:
+      attributes:
+        id: PIN_70_PERIPHERAL_FUNCTION
+      children:
+      - children:
+        - attributes:
+            value: ''
+          type: User
+        type: Values
+      type: String
+    PIN_67_FUNCTION_TYPE:
+      attributes:
+        id: PIN_67_FUNCTION_TYPE
+      children:
+      - children:
+        - attributes:
+            value: ''
+          type: User
+        type: Values
+      type: String
+    PIN_67_PERIPHERAL_FUNCTION:
+      attributes:
+        id: PIN_67_PERIPHERAL_FUNCTION
+      children:
+      - children:
+        - attributes:
+            value: ''
+          type: User
+        type: Values
+      type: String
+    PIN_68_FUNCTION_TYPE:
+      attributes:
+        id: PIN_68_FUNCTION_TYPE
+      children:
+      - children:
+        - attributes:
+            value: ''
+          type: User
+        type: Values
+      type: String
+    PIN_68_PERIPHERAL_FUNCTION:
+      attributes:
+        id: PIN_68_PERIPHERAL_FUNCTION
+      children:
+      - children:
+        - attributes:
+            value: ''
+          type: User
+        type: Values
+      type: String
+    PIN_39_FUNCTION_TYPE:
+      attributes:
+        id: PIN_39_FUNCTION_TYPE
+      children:
+      - children:
+        - attributes:
+            value: ''
+          type: User
+        type: Values
+      type: String
+    PIN_39_PERIPHERAL_FUNCTION:
+      attributes:
+        id: PIN_39_PERIPHERAL_FUNCTION
+      children:
+      - children:
+        - attributes:
+            value: ''
+          type: User
+        type: Values
+      type: String
+    PIN_40_FUNCTION_TYPE:
+      attributes:
+        id: PIN_40_FUNCTION_TYPE
+      children:
+      - children:
+        - attributes:
+            value: ''
+          type: User
+        type: Values
+      type: String
+    PIN_40_PERIPHERAL_FUNCTION:
+      attributes:
+        id: PIN_40_PERIPHERAL_FUNCTION
+      children:
+      - children:
+        - attributes:
+            value: ''
+          type: User
+        type: Values
+      type: String
+    PIN_37_FUNCTION_TYPE:
+      attributes:
+        id: PIN_37_FUNCTION_TYPE
+      children:
+      - children:
+        - attributes:
+            value: ''
+          type: User
+        type: Values
+      type: String
+    PIN_37_PERIPHERAL_FUNCTION:
+      attributes:
+        id: PIN_37_PERIPHERAL_FUNCTION
+      children:
+      - children:
+        - attributes:
+            value: ''
+          type: User
+        type: Values
+      type: String
+    PIN_38_FUNCTION_TYPE:
+      attributes:
+        id: PIN_38_FUNCTION_TYPE
+      children:
+      - children:
+        - attributes:
+            value: ''
+          type: User
+        type: Values
+      type: String
+    PIN_38_PERIPHERAL_FUNCTION:
+      attributes:
+        id: PIN_38_PERIPHERAL_FUNCTION
+      children:
+      - children:
+        - attributes:
+            value: ''
+          type: User
+        type: Values
+      type: String
+    XDMAC_LL_ENABLE:
+      attributes:
+        id: XDMAC_LL_ENABLE
+      children:
+      - children:
+        - attributes:
+            value: 'true'
+          type: User
+        type: Values
+      type: Boolean
+    XDMAC_CC5_DAM:
+      attributes:
+        id: XDMAC_CC5_DAM
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '1'
+          type: Dynamic
+        type: Values
+      type: KeyValueSet
+    XDMAC_CC5_SIF:
+      attributes:
+        id: XDMAC_CC5_SIF
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0'
+          type: Dynamic
+        type: Values
+      type: KeyValueSet
+    XDMAC_CC5_DIF:
+      attributes:
+        id: XDMAC_CC5_DIF
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '1'
+          type: Dynamic
+        type: Values
+      type: KeyValueSet
+    XDMAC_CC5_SAM:
+      attributes:
+        id: XDMAC_CC5_SAM
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '1'
+          type: Dynamic
+        type: Values
+      type: KeyValueSet
+    XDMAC_CC5_TYPE:
+      attributes:
+        id: XDMAC_CC5_TYPE
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0'
+          type: Dynamic
+        type: Values
+      type: KeyValueSet
+    XDMAC_CC5_MBSIZE:
+      attributes:
+        id: XDMAC_CC5_MBSIZE
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0'
+          type: Dynamic
+        type: Values
+      type: KeyValueSet
+    XDMAC_CC5_CSIZE:
+      attributes:
+        id: XDMAC_CC5_CSIZE
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0'
+          type: Dynamic
+        type: Values
+      type: KeyValueSet
+    XDMAC_CC5_DWIDTH:
+      attributes:
+        id: XDMAC_CC5_DWIDTH
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0'
+          type: Dynamic
+        type: Values
+      type: KeyValueSet
+    XDMAC_CC5_DSYNC:
+      attributes:
+        id: XDMAC_CC5_DSYNC
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0'
+          type: Dynamic
+        type: Values
+      type: KeyValueSet
+    XDMAC_CC5_SWREQ:
+      attributes:
+        id: XDMAC_CC5_SWREQ
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0'
+          type: Dynamic
+        type: Values
+      type: KeyValueSet
+    XDMAC_CC5_PERID_VAL:
+      attributes:
+        id: XDMAC_CC5_PERID_VAL
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0'
+          type: Dynamic
+        type: Values
+      type: Integer
+    XDMAC_CH0_ENABLE:
+      attributes:
+        id: XDMAC_CH0_ENABLE
+      children:
+      - children:
+        - attributes:
+            value: 'true'
+          type: User
+        type: Values
+      type: Boolean
+    XDMAC_CH1_ENABLE:
+      attributes:
+        id: XDMAC_CH1_ENABLE
+      children:
+      - children:
+        - attributes:
+            value: 'true'
+          type: User
+        type: Values
+      type: Boolean
+    XDMAC_CH2_ENABLE:
+      attributes:
+        id: XDMAC_CH2_ENABLE
+      children:
+      - children:
+        - attributes:
+            value: 'true'
+          type: User
+        type: Values
+      type: Boolean
+    XDMAC_CH3_ENABLE:
+      attributes:
+        id: XDMAC_CH3_ENABLE
+      children:
+      - children:
+        - attributes:
+            value: 'true'
+          type: User
+        type: Values
+      type: Boolean
+    XDMAC_HIGHEST_CHANNEL:
+      attributes:
+        id: XDMAC_HIGHEST_CHANNEL
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '5'
+          type: Dynamic
+        type: Values
+      type: Integer
+    DMA_ENABLE:
+      attributes:
+        id: DMA_ENABLE
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    XDMAC_CH4_ENABLE:
+      attributes:
+        id: XDMAC_CH4_ENABLE
+      children:
+      - children:
+        - attributes:
+            value: 'true'
+          type: User
+        type: Values
+      type: Boolean
+    XDMAC_CC0_DSYNC:
+      attributes:
+        id: XDMAC_CC0_DSYNC
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0'
+          type: Dynamic
+        type: Values
+      type: KeyValueSet
+    XDMAC_CC0_DWIDTH:
+      attributes:
+        id: XDMAC_CC0_DWIDTH
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0'
+          type: Dynamic
+        type: Values
+      type: KeyValueSet
+    XDMAC_CC0_MBSIZE:
+      attributes:
+        id: XDMAC_CC0_MBSIZE
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0'
+          type: Dynamic
+        type: Values
+      type: KeyValueSet
+    XDMAC_CC0_DIF:
+      attributes:
+        id: XDMAC_CC0_DIF
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '1'
+          type: Dynamic
+        type: Values
+      type: KeyValueSet
+    XDMAC_CC0_DAM:
+      attributes:
+        id: XDMAC_CC0_DAM
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '1'
+          type: Dynamic
+        type: Values
+      type: KeyValueSet
+    XDMAC_CC0_SIF:
+      attributes:
+        id: XDMAC_CC0_SIF
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0'
+          type: Dynamic
+        type: Values
+      type: KeyValueSet
+    XDMAC_CC0_SWREQ:
+      attributes:
+        id: XDMAC_CC0_SWREQ
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0'
+          type: Dynamic
+        type: Values
+      type: KeyValueSet
+    XDMAC_CC0_SAM:
+      attributes:
+        id: XDMAC_CC0_SAM
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0'
+          type: Dynamic
+        type: Values
+      type: KeyValueSet
+    XDMAC_CC0_TYPE:
+      attributes:
+        id: XDMAC_CC0_TYPE
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '1'
+          type: Dynamic
+        type: Values
+      type: KeyValueSet
+    XDMAC_CC0_PERID_VAL:
+      attributes:
+        id: XDMAC_CC0_PERID_VAL
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '1'
+          type: Dynamic
+        type: Values
+      type: Integer
+    XDMAC_CC0_CSIZE:
+      attributes:
+        id: XDMAC_CC0_CSIZE
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0'
+          type: Dynamic
+        type: Values
+      type: KeyValueSet
+    XDMAC_CC0_PERID:
+      attributes:
+        id: XDMAC_CC0_PERID
+      children:
+      - children:
+        - attributes:
+            value: FLEXCOM0_Receive
+          type: User
+        type: Values
+      type: Combo
+    XDMAC_CC1_SWREQ:
+      attributes:
+        id: XDMAC_CC1_SWREQ
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0'
+          type: Dynamic
+        type: Values
+      type: KeyValueSet
+    XDMAC_CC1_DWIDTH:
+      attributes:
+        id: XDMAC_CC1_DWIDTH
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0'
+          type: Dynamic
+        type: Values
+      type: KeyValueSet
+    XDMAC_CC1_SAM:
+      attributes:
+        id: XDMAC_CC1_SAM
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0'
+          type: Dynamic
+        type: Values
+      type: KeyValueSet
+    XDMAC_CC1_CSIZE:
+      attributes:
+        id: XDMAC_CC1_CSIZE
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0'
+          type: Dynamic
+        type: Values
+      type: KeyValueSet
+    XDMAC_CC1_DIF:
+      attributes:
+        id: XDMAC_CC1_DIF
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '1'
+          type: Dynamic
+        type: Values
+      type: KeyValueSet
+    XDMAC_CC1_DAM:
+      attributes:
+        id: XDMAC_CC1_DAM
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '1'
+          type: Dynamic
+        type: Values
+      type: KeyValueSet
+    XDMAC_CC1_MBSIZE:
+      attributes:
+        id: XDMAC_CC1_MBSIZE
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0'
+          type: Dynamic
+        type: Values
+      type: KeyValueSet
+    XDMAC_CC1_PERID_VAL:
+      attributes:
+        id: XDMAC_CC1_PERID_VAL
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '5'
+          type: Dynamic
+        type: Values
+      type: Integer
+    XDMAC_CC1_SIF:
+      attributes:
+        id: XDMAC_CC1_SIF
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0'
+          type: Dynamic
+        type: Values
+      type: KeyValueSet
+    XDMAC_CC1_TYPE:
+      attributes:
+        id: XDMAC_CC1_TYPE
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '1'
+          type: Dynamic
+        type: Values
+      type: KeyValueSet
+    XDMAC_CC1_DSYNC:
+      attributes:
+        id: XDMAC_CC1_DSYNC
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0'
+          type: Dynamic
+        type: Values
+      type: KeyValueSet
+    XDMAC_CC1_PERID:
+      attributes:
+        id: XDMAC_CC1_PERID
+      children:
+      - children:
+        - attributes:
+            value: FLEXCOM2_Receive
+          type: User
+        type: Values
+      type: Combo
+    XDMAC_CC2_SAM:
+      attributes:
+        id: XDMAC_CC2_SAM
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '1'
+          type: Dynamic
+        type: Values
+      type: KeyValueSet
+    XDMAC_CC2_DIF:
+      attributes:
+        id: XDMAC_CC2_DIF
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0'
+          type: Dynamic
+        type: Values
+      type: KeyValueSet
+    XDMAC_CC2_DSYNC:
+      attributes:
+        id: XDMAC_CC2_DSYNC
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '1'
+          type: Dynamic
+        type: Values
+      type: KeyValueSet
+    XDMAC_CC2_MBSIZE:
+      attributes:
+        id: XDMAC_CC2_MBSIZE
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0'
+          type: Dynamic
+        type: Values
+      type: KeyValueSet
+    XDMAC_CC2_SIF:
+      attributes:
+        id: XDMAC_CC2_SIF
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '1'
+          type: Dynamic
+        type: Values
+      type: KeyValueSet
+    XDMAC_CC2_SWREQ:
+      attributes:
+        id: XDMAC_CC2_SWREQ
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0'
+          type: Dynamic
+        type: Values
+      type: KeyValueSet
+    XDMAC_CC2_CSIZE:
+      attributes:
+        id: XDMAC_CC2_CSIZE
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0'
+          type: Dynamic
+        type: Values
+      type: KeyValueSet
+    XDMAC_CC2_DAM:
+      attributes:
+        id: XDMAC_CC2_DAM
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0'
+          type: Dynamic
+        type: Values
+      type: KeyValueSet
+    XDMAC_CC2_DWIDTH:
+      attributes:
+        id: XDMAC_CC2_DWIDTH
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0'
+          type: Dynamic
+        type: Values
+      type: KeyValueSet
+    XDMAC_CC2_TYPE:
+      attributes:
+        id: XDMAC_CC2_TYPE
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '1'
+          type: Dynamic
+        type: Values
+      type: KeyValueSet
+    XDMAC_CC2_PERID_VAL:
+      attributes:
+        id: XDMAC_CC2_PERID_VAL
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '6'
+          type: Dynamic
+        type: Values
+      type: Integer
+    XDMAC_CC2_PERID:
+      attributes:
+        id: XDMAC_CC2_PERID
+      children:
+      - children:
+        - attributes:
+            value: FLEXCOM3_Transmit
+          type: User
+        type: Values
+      type: Combo
+    XDMAC_CC3_DSYNC:
+      attributes:
+        id: XDMAC_CC3_DSYNC
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0'
+          type: Dynamic
+        type: Values
+      type: KeyValueSet
+    XDMAC_CC3_PERID_VAL:
+      attributes:
+        id: XDMAC_CC3_PERID_VAL
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '9'
+          type: Dynamic
+        type: Values
+      type: Integer
+    XDMAC_CC3_DIF:
+      attributes:
+        id: XDMAC_CC3_DIF
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '1'
+          type: Dynamic
+        type: Values
+      type: KeyValueSet
+    XDMAC_CC3_CSIZE:
+      attributes:
+        id: XDMAC_CC3_CSIZE
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0'
+          type: Dynamic
+        type: Values
+      type: KeyValueSet
+    XDMAC_CC3_DAM:
+      attributes:
+        id: XDMAC_CC3_DAM
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '1'
+          type: Dynamic
+        type: Values
+      type: KeyValueSet
+    XDMAC_CC3_SIF:
+      attributes:
+        id: XDMAC_CC3_SIF
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0'
+          type: Dynamic
+        type: Values
+      type: KeyValueSet
+    XDMAC_CC3_MBSIZE:
+      attributes:
+        id: XDMAC_CC3_MBSIZE
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0'
+          type: Dynamic
+        type: Values
+      type: KeyValueSet
+    XDMAC_CC3_SAM:
+      attributes:
+        id: XDMAC_CC3_SAM
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0'
+          type: Dynamic
+        type: Values
+      type: KeyValueSet
+    XDMAC_CC3_DWIDTH:
+      attributes:
+        id: XDMAC_CC3_DWIDTH
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0'
+          type: Dynamic
+        type: Values
+      type: KeyValueSet
+    XDMAC_CC3_SWREQ:
+      attributes:
+        id: XDMAC_CC3_SWREQ
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0'
+          type: Dynamic
+        type: Values
+      type: KeyValueSet
+    XDMAC_CC3_TYPE:
+      attributes:
+        id: XDMAC_CC3_TYPE
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '1'
+          type: Dynamic
+        type: Values
+      type: KeyValueSet
+    XDMAC_CC3_PERID:
+      attributes:
+        id: XDMAC_CC3_PERID
+      children:
+      - children:
+        - attributes:
+            value: FLEXCOM4_Receive
+          type: User
+        type: Values
+      type: Combo
+    XDMAC_CC4_TYPE:
+      attributes:
+        id: XDMAC_CC4_TYPE
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '1'
+          type: Dynamic
+        type: Values
+      type: KeyValueSet
+    XDMAC_CC4_SWREQ:
+      attributes:
+        id: XDMAC_CC4_SWREQ
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0'
+          type: Dynamic
+        type: Values
+      type: KeyValueSet
+    XDMAC_CC4_CSIZE:
+      attributes:
+        id: XDMAC_CC4_CSIZE
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0'
+          type: Dynamic
+        type: Values
+      type: KeyValueSet
+    XDMAC_CC4_SAM:
+      attributes:
+        id: XDMAC_CC4_SAM
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '1'
+          type: Dynamic
+        type: Values
+      type: KeyValueSet
+    XDMAC_CC4_DAM:
+      attributes:
+        id: XDMAC_CC4_DAM
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0'
+          type: Dynamic
+        type: Values
+      type: KeyValueSet
+    XDMAC_CC4_DSYNC:
+      attributes:
+        id: XDMAC_CC4_DSYNC
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '1'
+          type: Dynamic
+        type: Values
+      type: KeyValueSet
+    XDMAC_CC4_SIF:
+      attributes:
+        id: XDMAC_CC4_SIF
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '1'
+          type: Dynamic
+        type: Values
+      type: KeyValueSet
+    XDMAC_CC4_DIF:
+      attributes:
+        id: XDMAC_CC4_DIF
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0'
+          type: Dynamic
+        type: Values
+      type: KeyValueSet
+    XDMAC_CC4_PERID_VAL:
+      attributes:
+        id: XDMAC_CC4_PERID_VAL
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '10'
+          type: Dynamic
+        type: Values
+      type: Integer
+    XDMAC_CC4_MBSIZE:
+      attributes:
+        id: XDMAC_CC4_MBSIZE
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0'
+          type: Dynamic
+        type: Values
+      type: KeyValueSet
+    XDMAC_CC4_DWIDTH:
+      attributes:
+        id: XDMAC_CC4_DWIDTH
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0'
+          type: Dynamic
+        type: Values
+      type: KeyValueSet
+    XDMAC_CC4_PERID:
+      attributes:
+        id: XDMAC_CC4_PERID
+      children:
+      - children:
+        - attributes:
+            value: FLEXCOM5_Transmit
+          type: User
+        type: Values
+      type: Combo
   userData:
     children:
     - attributes:

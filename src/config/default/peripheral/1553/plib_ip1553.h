@@ -260,11 +260,25 @@ void IP1553_ResetRxBuffersStatus(uint32_t buffers);
 
 IP1553_INT_MASK IP1553_IrqStatusGet( void );
 
-void IP1553_BcStartDataTransfer(IP1553_DATA_TX_TYPE transferType, uint8_t txAddr, uint8_t txSubAddr, uint8_t rxAddr, uint8_t rxSubAddr, uint8_t dataWordCount, IP1553_BUS bus );
-
-void IP1553_BcModeCommandTransfer(uint8_t rtAddr, IP1553_MODE_CMD modeCommand, uint16_t cmdParameter, IP1553_BUS bus);
 uint16_t IP1553_GetFirstStatusWord( void );
-uint16_t IP1553_GetSecondStatusWord( void );
+void IP1553_CallbackRegister(IP1553_CALLBACK callback, uintptr_t contextHandle);
+
+void IP1553_InterruptEnable(IP1553_INT_MASK interruptMask);
+
+void IP1553_InterruptDisable(IP1553_INT_MASK interruptMask);
+void IP1553_BCEnableCmdSet(bool enable);
+
+void IP1553_SREQBitCmdSet(bool enable);
+
+void IP1553_BusyBitCmdSet(bool enable);
+
+void IP1553_SSBitCmdSet(bool enable);
+
+void IP1553_TRBitCmdSet(bool enable);
+
+void IP1553_BitWordSet(uint16_t bitWord);
+
+void IP1553_VectorWordSet(uint16_t vectorWord);
 // DOM-IGNORE-BEGIN
 #ifdef __cplusplus  // Provide C++ Compatibility
 }

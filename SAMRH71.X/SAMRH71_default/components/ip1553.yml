@@ -48,6 +48,37 @@ data:
             id: ip1553
             value: '1'
           type: Dynamic
+        - attributes:
+            value: '0'
+          type: User
         type: Values
       type: KeyValueSet
+    IP1553_RT_ADDR:
+      attributes:
+        id: IP1553_RT_ADDR
+      children:
+      - children:
+        - attributes:
+            id: visible
+          children:
+          - type: Value
+            value: 'true'
+          type: Boolean
+        type: Attributes
+      - children:
+        - attributes:
+            value: '1'
+          type: User
+        type: Values
+      type: Integer
+    INTERRUPT_MODE:
+      attributes:
+        id: INTERRUPT_MODE
+      children:
+      - children:
+        - attributes:
+            value: 'true'
+          type: User
+        type: Values
+      type: Boolean
   userData: {}

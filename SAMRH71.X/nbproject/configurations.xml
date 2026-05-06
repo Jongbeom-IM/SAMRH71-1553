@@ -17,6 +17,11 @@
               <logicalFolder name="usart" displayName="usart" projectFiles="true">
                 <itemPath>../src/config/default/peripheral/flexcom/usart/plib_flexcom1_usart.h</itemPath>
                 <itemPath>../src/config/default/peripheral/flexcom/usart/plib_flexcom_usart_local.h</itemPath>
+                <itemPath>../src/config/default/peripheral/flexcom/usart/plib_flexcom3_usart.h</itemPath>
+                <itemPath>../src/config/default/peripheral/flexcom/usart/plib_flexcom4_usart.h</itemPath>
+                <itemPath>../src/config/default/peripheral/flexcom/usart/plib_flexcom5_usart.h</itemPath>
+                <itemPath>../src/config/default/peripheral/flexcom/usart/plib_flexcom0_usart.h</itemPath>
+                <itemPath>../src/config/default/peripheral/flexcom/usart/plib_flexcom2_usart.h</itemPath>
               </logicalFolder>
             </logicalFolder>
             <logicalFolder name="matrix" displayName="matrix" projectFiles="true">
@@ -27,6 +32,10 @@
             </logicalFolder>
             <logicalFolder name="pio" displayName="pio" projectFiles="true">
               <itemPath>../src/config/default/peripheral/pio/plib_pio.h</itemPath>
+            </logicalFolder>
+            <logicalFolder name="xdmac" displayName="xdmac" projectFiles="true">
+              <itemPath>../src/config/default/peripheral/xdmac/plib_xdmac_common.h</itemPath>
+              <itemPath>../src/config/default/peripheral/xdmac/plib_xdmac.h</itemPath>
             </logicalFolder>
           </logicalFolder>
           <itemPath>../src/config/default/device.h</itemPath>
@@ -154,11 +163,16 @@
                      projectFiles="true">
         <logicalFolder name="components" displayName="components" projectFiles="true">
           <itemPath>SAMRH71_default/components/core.yml</itemPath>
+          <itemPath>SAMRH71_default/components/flexcom0.yml</itemPath>
           <itemPath>SAMRH71_default/components/stdio.yml</itemPath>
           <itemPath>SAMRH71_default/components/cmsis.yml</itemPath>
           <itemPath>SAMRH71_default/components/ip1553.yml</itemPath>
+          <itemPath>SAMRH71_default/components/flexcom2.yml</itemPath>
           <itemPath>SAMRH71_default/components/flexcom1.yml</itemPath>
           <itemPath>SAMRH71_default/components/dfp.yml</itemPath>
+          <itemPath>SAMRH71_default/components/flexcom3.yml</itemPath>
+          <itemPath>SAMRH71_default/components/flexcom4.yml</itemPath>
+          <itemPath>SAMRH71_default/components/flexcom5.yml</itemPath>
         </logicalFolder>
         <itemPath>SAMRH71_default/mcc-config.mc4</itemPath>
       </logicalFolder>
@@ -193,6 +207,11 @@
             <logicalFolder name="flexcom" displayName="flexcom" projectFiles="true">
               <logicalFolder name="usart" displayName="usart" projectFiles="true">
                 <itemPath>../src/config/default/peripheral/flexcom/usart/plib_flexcom1_usart.c</itemPath>
+                <itemPath>../src/config/default/peripheral/flexcom/usart/plib_flexcom3_usart.c</itemPath>
+                <itemPath>../src/config/default/peripheral/flexcom/usart/plib_flexcom4_usart.c</itemPath>
+                <itemPath>../src/config/default/peripheral/flexcom/usart/plib_flexcom5_usart.c</itemPath>
+                <itemPath>../src/config/default/peripheral/flexcom/usart/plib_flexcom0_usart.c</itemPath>
+                <itemPath>../src/config/default/peripheral/flexcom/usart/plib_flexcom2_usart.c</itemPath>
               </logicalFolder>
             </logicalFolder>
             <logicalFolder name="matrix" displayName="matrix" projectFiles="true">
@@ -203,6 +222,9 @@
             </logicalFolder>
             <logicalFolder name="pio" displayName="pio" projectFiles="true">
               <itemPath>../src/config/default/peripheral/pio/plib_pio.c</itemPath>
+            </logicalFolder>
+            <logicalFolder name="xdmac" displayName="xdmac" projectFiles="true">
+              <itemPath>../src/config/default/peripheral/xdmac/plib_xdmac.c</itemPath>
             </logicalFolder>
           </logicalFolder>
           <logicalFolder name="stdio" displayName="stdio" projectFiles="true">
@@ -218,6 +240,14 @@
       <logicalFolder name="usr" displayName="usr" projectFiles="true">
         <itemPath>C:/Users/User/Documents/research/SAMRH71-1553/src/usr/default_function.c</itemPath>
         <itemPath>C:/Users/User/Documents/research/SAMRH71-1553/src/usr/default_function.h</itemPath>
+        <itemPath>C:/Users/User/Documents/research/SAMRH71-1553/src/usr/ip1553_rt.c</itemPath>
+        <itemPath>C:/Users/User/Documents/research/SAMRH71-1553/src/usr/ip1553_rt.h</itemPath>
+        <itemPath>C:/Users/User/Documents/research/SAMRH71-1553/src/usr/FLEXCOM_dma_objects.c</itemPath>
+        <itemPath>C:/Users/User/Documents/research/SAMRH71-1553/src/usr/FLEXCOM_dma_types.h</itemPath>
+        <itemPath>C:/Users/User/Documents/research/SAMRH71-1553/src/usr/circular_dma.c</itemPath>
+        <itemPath>C:/Users/User/Documents/research/SAMRH71-1553/src/usr/circular_dma.h</itemPath>
+        <itemPath>C:/Users/User/Documents/research/SAMRH71-1553/src/usr/ip1553_app.c</itemPath>
+        <itemPath>C:/Users/User/Documents/research/SAMRH71-1553/src/usr/ip1553_app.h</itemPath>
       </logicalFolder>
       <itemPath>../src/main.c</itemPath>
     </logicalFolder>
@@ -539,6 +569,8 @@
         <property key="memories.programmemory" value="true"/>
         <property key="memories.programmemory.ranges" value="10000000-1001ffff"/>
         <property key="poweroptions.powerenable" value="false"/>
+        <property key="programmerToGoFilePath"
+                  value="C:/Users/User/Documents/research/SAMRH71-1553/SAMRH71.X/debug/default/SAMRH71_ptg"/>
         <property key="programoptions.eraseb4program" value="true"/>
         <property key="programoptions.preservedataflash" value="false"/>
         <property key="programoptions.preservedataflash.ranges"

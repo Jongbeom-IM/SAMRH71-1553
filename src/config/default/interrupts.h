@@ -63,7 +63,14 @@ void MemoryManagement_Handler (void);
 void BusFault_Handler (void);
 void UsageFault_Handler (void);
 void DebugMonitor_Handler (void);
+void FLEXCOM0_InterruptHandler (void);
 void PIOC_InterruptHandler (void);
+void FLEXCOM2_InterruptHandler (void);
+void FLEXCOM3_InterruptHandler (void);
+void FLEXCOM4_InterruptHandler (void);
+void FLEXCOM5_InterruptHandler (void);
+void XDMAC_InterruptHandler (void);
+void IP1553_InterruptHandler (void);
 
 
 

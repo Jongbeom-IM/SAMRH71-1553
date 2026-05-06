@@ -92,10 +92,21 @@ build/default/production/_ext/1360937237/main.o: ../src/main.c \
  ../src/packs/CMSIS/CMSIS/Core/Include/cmsis_compiler.h \
  ../src/config/default/peripheral/matrix/plib_matrix.h \
  ../src/config/default/peripheral/nvic/plib_nvic.h \
- ../src/config/default/peripheral/1553/plib_ip1553.h \
- ../src/config/default/peripheral/flexcom/usart/plib_flexcom1_usart.h \
+ ../src/config/default/peripheral/xdmac/plib_xdmac.h \
+ ../src/config/default/peripheral/xdmac/plib_xdmac_common.h \
+ ../src/config/default/toolchain_specifics.h \
+ ../src/config/default/peripheral/flexcom/usart/plib_flexcom3_usart.h \
  ../src/config/default/peripheral/flexcom/usart/plib_flexcom_usart_local.h \
- ../src/usr/default_function.h
+ ../src/config/default/peripheral/flexcom/usart/plib_flexcom4_usart.h \
+ ../src/config/default/peripheral/flexcom/usart/plib_flexcom5_usart.h \
+ ../src/config/default/peripheral/1553/plib_ip1553.h \
+ ../src/config/default/peripheral/flexcom/usart/plib_flexcom0_usart.h \
+ ../src/config/default/peripheral/flexcom/usart/plib_flexcom1_usart.h \
+ ../src/config/default/peripheral/flexcom/usart/plib_flexcom2_usart.h \
+ ../src/usr/default_function.h ../src/usr/ip1553_rt.h \
+ ../src/usr/circular_dma.h ../src/usr/FLEXCOM_dma_types.h \
+ ../src/config/default/peripheral/xdmac/plib_xdmac.h \
+ ../src/usr/FLEXCOM_dma_types.h
 ../src/config/default/definitions.h:
 ../src/config/default/peripheral/clk/plib_clk.h:
 ../src/config/default/peripheral/pio/plib_pio.h:
@@ -190,7 +201,20 @@ build/default/production/_ext/1360937237/main.o: ../src/main.c \
 ../src/packs/CMSIS/CMSIS/Core/Include/cmsis_compiler.h:
 ../src/config/default/peripheral/matrix/plib_matrix.h:
 ../src/config/default/peripheral/nvic/plib_nvic.h:
-../src/config/default/peripheral/1553/plib_ip1553.h:
-../src/config/default/peripheral/flexcom/usart/plib_flexcom1_usart.h:
+../src/config/default/peripheral/xdmac/plib_xdmac.h:
+../src/config/default/peripheral/xdmac/plib_xdmac_common.h:
+../src/config/default/toolchain_specifics.h:
+../src/config/default/peripheral/flexcom/usart/plib_flexcom3_usart.h:
 ../src/config/default/peripheral/flexcom/usart/plib_flexcom_usart_local.h:
+../src/config/default/peripheral/flexcom/usart/plib_flexcom4_usart.h:
+../src/config/default/peripheral/flexcom/usart/plib_flexcom5_usart.h:
+../src/config/default/peripheral/1553/plib_ip1553.h:
+../src/config/default/peripheral/flexcom/usart/plib_flexcom0_usart.h:
+../src/config/default/peripheral/flexcom/usart/plib_flexcom1_usart.h:
+../src/config/default/peripheral/flexcom/usart/plib_flexcom2_usart.h:
 ../src/usr/default_function.h:
+../src/usr/ip1553_rt.h:
+../src/usr/circular_dma.h:
+../src/usr/FLEXCOM_dma_types.h:
+../src/config/default/peripheral/xdmac/plib_xdmac.h:
+../src/usr/FLEXCOM_dma_types.h:
