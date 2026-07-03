@@ -69,8 +69,6 @@ void NVIC_Initialize( void )
     NVIC_EnableIRQ(FLEXCOM3_IRQn);
     NVIC_SetPriority(FLEXCOM4_IRQn, 7);
     NVIC_EnableIRQ(FLEXCOM4_IRQn);
-    NVIC_SetPriority(FLEXCOM5_IRQn, 7);
-    NVIC_EnableIRQ(FLEXCOM5_IRQn);
     NVIC_SetPriority(XDMAC_IRQn, 7);
     NVIC_EnableIRQ(XDMAC_IRQn);
     NVIC_SetPriority(IP1553_IRQn, 7);

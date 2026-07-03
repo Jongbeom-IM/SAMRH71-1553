@@ -51,17 +51,17 @@ OBJECTDIR=build/${CND_CONF}/${IMAGE_TYPE}
 DISTDIR=dist/${CND_CONF}/${IMAGE_TYPE}
 
 # Source Files Quoted if spaced
-SOURCEFILES_QUOTED_IF_SPACED=../src/config/default/peripheral/1553/plib_ip1553.c ../src/config/default/peripheral/clk/plib_clk.c ../src/config/default/peripheral/flexcom/usart/plib_flexcom1_usart.c ../src/config/default/peripheral/matrix/plib_matrix.c ../src/config/default/peripheral/nvic/plib_nvic.c ../src/config/default/peripheral/pio/plib_pio.c ../src/config/default/stdio/xc32_monitor.c ../src/config/default/initialization.c ../src/config/default/interrupts.c ../src/config/default/exceptions.c ../src/config/default/startup_xc32.c ../src/config/default/libc_syscalls.c C:/Users/User/Documents/research/SAMRH71-1553/src/usr/default_function.c C:/Users/User/Documents/research/SAMRH71-1553/src/usr/ip1553_rt.c ../src/main.c ../src/config/default/peripheral/flexcom/usart/plib_flexcom3_usart.c ../src/config/default/peripheral/flexcom/usart/plib_flexcom4_usart.c ../src/config/default/peripheral/flexcom/usart/plib_flexcom5_usart.c ../src/config/default/peripheral/flexcom/usart/plib_flexcom0_usart.c ../src/config/default/peripheral/flexcom/usart/plib_flexcom2_usart.c ../src/config/default/peripheral/xdmac/plib_xdmac.c C:/Users/User/Documents/research/SAMRH71-1553/src/usr/FLEXCOM_dma_objects.c C:/Users/User/Documents/research/SAMRH71-1553/src/usr/circular_dma.c C:/Users/User/Documents/research/SAMRH71-1553/src/usr/ip1553_app.c
+SOURCEFILES_QUOTED_IF_SPACED=../src/config/default/peripheral/1553/plib_ip1553.c ../src/config/default/peripheral/clk/plib_clk.c ../src/config/default/peripheral/flexcom/usart/plib_flexcom1_usart.c ../src/config/default/peripheral/flexcom/usart/plib_flexcom3_usart.c ../src/config/default/peripheral/flexcom/usart/plib_flexcom4_usart.c ../src/config/default/peripheral/flexcom/usart/plib_flexcom5_usart.c ../src/config/default/peripheral/flexcom/usart/plib_flexcom0_usart.c ../src/config/default/peripheral/flexcom/usart/plib_flexcom2_usart.c ../src/config/default/peripheral/matrix/plib_matrix.c ../src/config/default/peripheral/nvic/plib_nvic.c ../src/config/default/peripheral/pio/plib_pio.c ../src/config/default/peripheral/xdmac/plib_xdmac.c ../src/config/default/stdio/xc32_monitor.c ../src/config/default/initialization.c ../src/config/default/interrupts.c ../src/config/default/exceptions.c ../src/config/default/startup_xc32.c ../src/config/default/libc_syscalls.c C:/Users/User/Documents/research/SAMRH71-1553/src/usr/default_function.c C:/Users/User/Documents/research/SAMRH71-1553/src/usr/ip1553_rt.c C:/Users/User/Documents/research/SAMRH71-1553/src/usr/FLEXCOM_dma_objects.c C:/Users/User/Documents/research/SAMRH71-1553/src/usr/circular_dma.c C:/Users/User/Documents/research/SAMRH71-1553/src/usr/ip1553_app.c ../src/main.c
 
 # Object Files Quoted if spaced
-OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/_ext/1863587092/plib_ip1553.o ${OBJECTDIR}/_ext/60165520/plib_clk.o ${OBJECTDIR}/_ext/1818436620/plib_flexcom1_usart.o ${OBJECTDIR}/_ext/1666157715/plib_matrix.o ${OBJECTDIR}/_ext/1865468468/plib_nvic.o ${OBJECTDIR}/_ext/60177924/plib_pio.o ${OBJECTDIR}/_ext/163028504/xc32_monitor.o ${OBJECTDIR}/_ext/1171490990/initialization.o ${OBJECTDIR}/_ext/1171490990/interrupts.o ${OBJECTDIR}/_ext/1171490990/exceptions.o ${OBJECTDIR}/_ext/1171490990/startup_xc32.o ${OBJECTDIR}/_ext/1171490990/libc_syscalls.o ${OBJECTDIR}/_ext/328528262/default_function.o ${OBJECTDIR}/_ext/328528262/ip1553_rt.o ${OBJECTDIR}/_ext/1360937237/main.o ${OBJECTDIR}/_ext/1818436620/plib_flexcom3_usart.o ${OBJECTDIR}/_ext/1818436620/plib_flexcom4_usart.o ${OBJECTDIR}/_ext/1818436620/plib_flexcom5_usart.o ${OBJECTDIR}/_ext/1818436620/plib_flexcom0_usart.o ${OBJECTDIR}/_ext/1818436620/plib_flexcom2_usart.o ${OBJECTDIR}/_ext/2003650513/plib_xdmac.o ${OBJECTDIR}/_ext/328528262/FLEXCOM_dma_objects.o ${OBJECTDIR}/_ext/328528262/circular_dma.o ${OBJECTDIR}/_ext/328528262/ip1553_app.o
-POSSIBLE_DEPFILES=${OBJECTDIR}/_ext/1863587092/plib_ip1553.o.d ${OBJECTDIR}/_ext/60165520/plib_clk.o.d ${OBJECTDIR}/_ext/1818436620/plib_flexcom1_usart.o.d ${OBJECTDIR}/_ext/1666157715/plib_matrix.o.d ${OBJECTDIR}/_ext/1865468468/plib_nvic.o.d ${OBJECTDIR}/_ext/60177924/plib_pio.o.d ${OBJECTDIR}/_ext/163028504/xc32_monitor.o.d ${OBJECTDIR}/_ext/1171490990/initialization.o.d ${OBJECTDIR}/_ext/1171490990/interrupts.o.d ${OBJECTDIR}/_ext/1171490990/exceptions.o.d ${OBJECTDIR}/_ext/1171490990/startup_xc32.o.d ${OBJECTDIR}/_ext/1171490990/libc_syscalls.o.d ${OBJECTDIR}/_ext/328528262/default_function.o.d ${OBJECTDIR}/_ext/328528262/ip1553_rt.o.d ${OBJECTDIR}/_ext/1360937237/main.o.d ${OBJECTDIR}/_ext/1818436620/plib_flexcom3_usart.o.d ${OBJECTDIR}/_ext/1818436620/plib_flexcom4_usart.o.d ${OBJECTDIR}/_ext/1818436620/plib_flexcom5_usart.o.d ${OBJECTDIR}/_ext/1818436620/plib_flexcom0_usart.o.d ${OBJECTDIR}/_ext/1818436620/plib_flexcom2_usart.o.d ${OBJECTDIR}/_ext/2003650513/plib_xdmac.o.d ${OBJECTDIR}/_ext/328528262/FLEXCOM_dma_objects.o.d ${OBJECTDIR}/_ext/328528262/circular_dma.o.d ${OBJECTDIR}/_ext/328528262/ip1553_app.o.d
+OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/_ext/1863587092/plib_ip1553.o ${OBJECTDIR}/_ext/60165520/plib_clk.o ${OBJECTDIR}/_ext/1818436620/plib_flexcom1_usart.o ${OBJECTDIR}/_ext/1818436620/plib_flexcom3_usart.o ${OBJECTDIR}/_ext/1818436620/plib_flexcom4_usart.o ${OBJECTDIR}/_ext/1818436620/plib_flexcom5_usart.o ${OBJECTDIR}/_ext/1818436620/plib_flexcom0_usart.o ${OBJECTDIR}/_ext/1818436620/plib_flexcom2_usart.o ${OBJECTDIR}/_ext/1666157715/plib_matrix.o ${OBJECTDIR}/_ext/1865468468/plib_nvic.o ${OBJECTDIR}/_ext/60177924/plib_pio.o ${OBJECTDIR}/_ext/2003650513/plib_xdmac.o ${OBJECTDIR}/_ext/163028504/xc32_monitor.o ${OBJECTDIR}/_ext/1171490990/initialization.o ${OBJECTDIR}/_ext/1171490990/interrupts.o ${OBJECTDIR}/_ext/1171490990/exceptions.o ${OBJECTDIR}/_ext/1171490990/startup_xc32.o ${OBJECTDIR}/_ext/1171490990/libc_syscalls.o ${OBJECTDIR}/_ext/328528262/default_function.o ${OBJECTDIR}/_ext/328528262/ip1553_rt.o ${OBJECTDIR}/_ext/328528262/FLEXCOM_dma_objects.o ${OBJECTDIR}/_ext/328528262/circular_dma.o ${OBJECTDIR}/_ext/328528262/ip1553_app.o ${OBJECTDIR}/_ext/1360937237/main.o
+POSSIBLE_DEPFILES=${OBJECTDIR}/_ext/1863587092/plib_ip1553.o.d ${OBJECTDIR}/_ext/60165520/plib_clk.o.d ${OBJECTDIR}/_ext/1818436620/plib_flexcom1_usart.o.d ${OBJECTDIR}/_ext/1818436620/plib_flexcom3_usart.o.d ${OBJECTDIR}/_ext/1818436620/plib_flexcom4_usart.o.d ${OBJECTDIR}/_ext/1818436620/plib_flexcom5_usart.o.d ${OBJECTDIR}/_ext/1818436620/plib_flexcom0_usart.o.d ${OBJECTDIR}/_ext/1818436620/plib_flexcom2_usart.o.d ${OBJECTDIR}/_ext/1666157715/plib_matrix.o.d ${OBJECTDIR}/_ext/1865468468/plib_nvic.o.d ${OBJECTDIR}/_ext/60177924/plib_pio.o.d ${OBJECTDIR}/_ext/2003650513/plib_xdmac.o.d ${OBJECTDIR}/_ext/163028504/xc32_monitor.o.d ${OBJECTDIR}/_ext/1171490990/initialization.o.d ${OBJECTDIR}/_ext/1171490990/interrupts.o.d ${OBJECTDIR}/_ext/1171490990/exceptions.o.d ${OBJECTDIR}/_ext/1171490990/startup_xc32.o.d ${OBJECTDIR}/_ext/1171490990/libc_syscalls.o.d ${OBJECTDIR}/_ext/328528262/default_function.o.d ${OBJECTDIR}/_ext/328528262/ip1553_rt.o.d ${OBJECTDIR}/_ext/328528262/FLEXCOM_dma_objects.o.d ${OBJECTDIR}/_ext/328528262/circular_dma.o.d ${OBJECTDIR}/_ext/328528262/ip1553_app.o.d ${OBJECTDIR}/_ext/1360937237/main.o.d
 
 # Object Files
-OBJECTFILES=${OBJECTDIR}/_ext/1863587092/plib_ip1553.o ${OBJECTDIR}/_ext/60165520/plib_clk.o ${OBJECTDIR}/_ext/1818436620/plib_flexcom1_usart.o ${OBJECTDIR}/_ext/1666157715/plib_matrix.o ${OBJECTDIR}/_ext/1865468468/plib_nvic.o ${OBJECTDIR}/_ext/60177924/plib_pio.o ${OBJECTDIR}/_ext/163028504/xc32_monitor.o ${OBJECTDIR}/_ext/1171490990/initialization.o ${OBJECTDIR}/_ext/1171490990/interrupts.o ${OBJECTDIR}/_ext/1171490990/exceptions.o ${OBJECTDIR}/_ext/1171490990/startup_xc32.o ${OBJECTDIR}/_ext/1171490990/libc_syscalls.o ${OBJECTDIR}/_ext/328528262/default_function.o ${OBJECTDIR}/_ext/328528262/ip1553_rt.o ${OBJECTDIR}/_ext/1360937237/main.o ${OBJECTDIR}/_ext/1818436620/plib_flexcom3_usart.o ${OBJECTDIR}/_ext/1818436620/plib_flexcom4_usart.o ${OBJECTDIR}/_ext/1818436620/plib_flexcom5_usart.o ${OBJECTDIR}/_ext/1818436620/plib_flexcom0_usart.o ${OBJECTDIR}/_ext/1818436620/plib_flexcom2_usart.o ${OBJECTDIR}/_ext/2003650513/plib_xdmac.o ${OBJECTDIR}/_ext/328528262/FLEXCOM_dma_objects.o ${OBJECTDIR}/_ext/328528262/circular_dma.o ${OBJECTDIR}/_ext/328528262/ip1553_app.o
+OBJECTFILES=${OBJECTDIR}/_ext/1863587092/plib_ip1553.o ${OBJECTDIR}/_ext/60165520/plib_clk.o ${OBJECTDIR}/_ext/1818436620/plib_flexcom1_usart.o ${OBJECTDIR}/_ext/1818436620/plib_flexcom3_usart.o ${OBJECTDIR}/_ext/1818436620/plib_flexcom4_usart.o ${OBJECTDIR}/_ext/1818436620/plib_flexcom5_usart.o ${OBJECTDIR}/_ext/1818436620/plib_flexcom0_usart.o ${OBJECTDIR}/_ext/1818436620/plib_flexcom2_usart.o ${OBJECTDIR}/_ext/1666157715/plib_matrix.o ${OBJECTDIR}/_ext/1865468468/plib_nvic.o ${OBJECTDIR}/_ext/60177924/plib_pio.o ${OBJECTDIR}/_ext/2003650513/plib_xdmac.o ${OBJECTDIR}/_ext/163028504/xc32_monitor.o ${OBJECTDIR}/_ext/1171490990/initialization.o ${OBJECTDIR}/_ext/1171490990/interrupts.o ${OBJECTDIR}/_ext/1171490990/exceptions.o ${OBJECTDIR}/_ext/1171490990/startup_xc32.o ${OBJECTDIR}/_ext/1171490990/libc_syscalls.o ${OBJECTDIR}/_ext/328528262/default_function.o ${OBJECTDIR}/_ext/328528262/ip1553_rt.o ${OBJECTDIR}/_ext/328528262/FLEXCOM_dma_objects.o ${OBJECTDIR}/_ext/328528262/circular_dma.o ${OBJECTDIR}/_ext/328528262/ip1553_app.o ${OBJECTDIR}/_ext/1360937237/main.o
 
 # Source Files
-SOURCEFILES=../src/config/default/peripheral/1553/plib_ip1553.c ../src/config/default/peripheral/clk/plib_clk.c ../src/config/default/peripheral/flexcom/usart/plib_flexcom1_usart.c ../src/config/default/peripheral/matrix/plib_matrix.c ../src/config/default/peripheral/nvic/plib_nvic.c ../src/config/default/peripheral/pio/plib_pio.c ../src/config/default/stdio/xc32_monitor.c ../src/config/default/initialization.c ../src/config/default/interrupts.c ../src/config/default/exceptions.c ../src/config/default/startup_xc32.c ../src/config/default/libc_syscalls.c C:/Users/User/Documents/research/SAMRH71-1553/src/usr/default_function.c C:/Users/User/Documents/research/SAMRH71-1553/src/usr/ip1553_rt.c ../src/main.c ../src/config/default/peripheral/flexcom/usart/plib_flexcom3_usart.c ../src/config/default/peripheral/flexcom/usart/plib_flexcom4_usart.c ../src/config/default/peripheral/flexcom/usart/plib_flexcom5_usart.c ../src/config/default/peripheral/flexcom/usart/plib_flexcom0_usart.c ../src/config/default/peripheral/flexcom/usart/plib_flexcom2_usart.c ../src/config/default/peripheral/xdmac/plib_xdmac.c C:/Users/User/Documents/research/SAMRH71-1553/src/usr/FLEXCOM_dma_objects.c C:/Users/User/Documents/research/SAMRH71-1553/src/usr/circular_dma.c C:/Users/User/Documents/research/SAMRH71-1553/src/usr/ip1553_app.c
+SOURCEFILES=../src/config/default/peripheral/1553/plib_ip1553.c ../src/config/default/peripheral/clk/plib_clk.c ../src/config/default/peripheral/flexcom/usart/plib_flexcom1_usart.c ../src/config/default/peripheral/flexcom/usart/plib_flexcom3_usart.c ../src/config/default/peripheral/flexcom/usart/plib_flexcom4_usart.c ../src/config/default/peripheral/flexcom/usart/plib_flexcom5_usart.c ../src/config/default/peripheral/flexcom/usart/plib_flexcom0_usart.c ../src/config/default/peripheral/flexcom/usart/plib_flexcom2_usart.c ../src/config/default/peripheral/matrix/plib_matrix.c ../src/config/default/peripheral/nvic/plib_nvic.c ../src/config/default/peripheral/pio/plib_pio.c ../src/config/default/peripheral/xdmac/plib_xdmac.c ../src/config/default/stdio/xc32_monitor.c ../src/config/default/initialization.c ../src/config/default/interrupts.c ../src/config/default/exceptions.c ../src/config/default/startup_xc32.c ../src/config/default/libc_syscalls.c C:/Users/User/Documents/research/SAMRH71-1553/src/usr/default_function.c C:/Users/User/Documents/research/SAMRH71-1553/src/usr/ip1553_rt.c C:/Users/User/Documents/research/SAMRH71-1553/src/usr/FLEXCOM_dma_objects.c C:/Users/User/Documents/research/SAMRH71-1553/src/usr/circular_dma.c C:/Users/User/Documents/research/SAMRH71-1553/src/usr/ip1553_app.c ../src/main.c
 
 # Pack Options 
 PACK_COMMON_OPTIONS=-I "${CMSIS_DIR}/CMSIS/Core/Include"
@@ -122,6 +122,36 @@ ${OBJECTDIR}/_ext/1818436620/plib_flexcom1_usart.o: ../src/config/default/periph
 	@${RM} ${OBJECTDIR}/_ext/1818436620/plib_flexcom1_usart.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -fdata-sections -O1 -fno-common -I"../src" -I"../src/config/default" -I"../src/packs/ATSAMRH71F20C_DFP" -I"../src/packs/CMSIS/" -I"../src/packs/CMSIS/CMSIS/Core/Include" -MP -MMD -MF "${OBJECTDIR}/_ext/1818436620/plib_flexcom1_usart.o.d" -o ${OBJECTDIR}/_ext/1818436620/plib_flexcom1_usart.o ../src/config/default/peripheral/flexcom/usart/plib_flexcom1_usart.c   -mdtcm=0x40000 -mitcm=0x20000 -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}/samrh71c" ${PACK_COMMON_OPTIONS} 
 	
+${OBJECTDIR}/_ext/1818436620/plib_flexcom3_usart.o: ../src/config/default/peripheral/flexcom/usart/plib_flexcom3_usart.c  .generated_files/flags/default/2595e3de2a381a5047d11fe31cd8d9cb1289e0e3 .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
+	@${MKDIR} "${OBJECTDIR}/_ext/1818436620" 
+	@${RM} ${OBJECTDIR}/_ext/1818436620/plib_flexcom3_usart.o.d 
+	@${RM} ${OBJECTDIR}/_ext/1818436620/plib_flexcom3_usart.o 
+	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -fdata-sections -O1 -fno-common -I"../src" -I"../src/config/default" -I"../src/packs/ATSAMRH71F20C_DFP" -I"../src/packs/CMSIS/" -I"../src/packs/CMSIS/CMSIS/Core/Include" -MP -MMD -MF "${OBJECTDIR}/_ext/1818436620/plib_flexcom3_usart.o.d" -o ${OBJECTDIR}/_ext/1818436620/plib_flexcom3_usart.o ../src/config/default/peripheral/flexcom/usart/plib_flexcom3_usart.c   -mdtcm=0x40000 -mitcm=0x20000 -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}/samrh71c" ${PACK_COMMON_OPTIONS} 
+	
+${OBJECTDIR}/_ext/1818436620/plib_flexcom4_usart.o: ../src/config/default/peripheral/flexcom/usart/plib_flexcom4_usart.c  .generated_files/flags/default/7c18d61128d201dfb087ddfb6bc5e45c8e51710b .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
+	@${MKDIR} "${OBJECTDIR}/_ext/1818436620" 
+	@${RM} ${OBJECTDIR}/_ext/1818436620/plib_flexcom4_usart.o.d 
+	@${RM} ${OBJECTDIR}/_ext/1818436620/plib_flexcom4_usart.o 
+	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -fdata-sections -O1 -fno-common -I"../src" -I"../src/config/default" -I"../src/packs/ATSAMRH71F20C_DFP" -I"../src/packs/CMSIS/" -I"../src/packs/CMSIS/CMSIS/Core/Include" -MP -MMD -MF "${OBJECTDIR}/_ext/1818436620/plib_flexcom4_usart.o.d" -o ${OBJECTDIR}/_ext/1818436620/plib_flexcom4_usart.o ../src/config/default/peripheral/flexcom/usart/plib_flexcom4_usart.c   -mdtcm=0x40000 -mitcm=0x20000 -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}/samrh71c" ${PACK_COMMON_OPTIONS} 
+	
+${OBJECTDIR}/_ext/1818436620/plib_flexcom5_usart.o: ../src/config/default/peripheral/flexcom/usart/plib_flexcom5_usart.c  .generated_files/flags/default/b6ab98400d037aaf9d02f26a57b6a44059a54079 .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
+	@${MKDIR} "${OBJECTDIR}/_ext/1818436620" 
+	@${RM} ${OBJECTDIR}/_ext/1818436620/plib_flexcom5_usart.o.d 
+	@${RM} ${OBJECTDIR}/_ext/1818436620/plib_flexcom5_usart.o 
+	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -fdata-sections -O1 -fno-common -I"../src" -I"../src/config/default" -I"../src/packs/ATSAMRH71F20C_DFP" -I"../src/packs/CMSIS/" -I"../src/packs/CMSIS/CMSIS/Core/Include" -MP -MMD -MF "${OBJECTDIR}/_ext/1818436620/plib_flexcom5_usart.o.d" -o ${OBJECTDIR}/_ext/1818436620/plib_flexcom5_usart.o ../src/config/default/peripheral/flexcom/usart/plib_flexcom5_usart.c   -mdtcm=0x40000 -mitcm=0x20000 -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}/samrh71c" ${PACK_COMMON_OPTIONS} 
+	
+${OBJECTDIR}/_ext/1818436620/plib_flexcom0_usart.o: ../src/config/default/peripheral/flexcom/usart/plib_flexcom0_usart.c  .generated_files/flags/default/eb0fa98d73858650c5e30157c167ff03ac9156c6 .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
+	@${MKDIR} "${OBJECTDIR}/_ext/1818436620" 
+	@${RM} ${OBJECTDIR}/_ext/1818436620/plib_flexcom0_usart.o.d 
+	@${RM} ${OBJECTDIR}/_ext/1818436620/plib_flexcom0_usart.o 
+	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -fdata-sections -O1 -fno-common -I"../src" -I"../src/config/default" -I"../src/packs/ATSAMRH71F20C_DFP" -I"../src/packs/CMSIS/" -I"../src/packs/CMSIS/CMSIS/Core/Include" -MP -MMD -MF "${OBJECTDIR}/_ext/1818436620/plib_flexcom0_usart.o.d" -o ${OBJECTDIR}/_ext/1818436620/plib_flexcom0_usart.o ../src/config/default/peripheral/flexcom/usart/plib_flexcom0_usart.c   -mdtcm=0x40000 -mitcm=0x20000 -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}/samrh71c" ${PACK_COMMON_OPTIONS} 
+	
+${OBJECTDIR}/_ext/1818436620/plib_flexcom2_usart.o: ../src/config/default/peripheral/flexcom/usart/plib_flexcom2_usart.c  .generated_files/flags/default/87f017bda07b307f718cb6da5515d80daf691316 .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
+	@${MKDIR} "${OBJECTDIR}/_ext/1818436620" 
+	@${RM} ${OBJECTDIR}/_ext/1818436620/plib_flexcom2_usart.o.d 
+	@${RM} ${OBJECTDIR}/_ext/1818436620/plib_flexcom2_usart.o 
+	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -fdata-sections -O1 -fno-common -I"../src" -I"../src/config/default" -I"../src/packs/ATSAMRH71F20C_DFP" -I"../src/packs/CMSIS/" -I"../src/packs/CMSIS/CMSIS/Core/Include" -MP -MMD -MF "${OBJECTDIR}/_ext/1818436620/plib_flexcom2_usart.o.d" -o ${OBJECTDIR}/_ext/1818436620/plib_flexcom2_usart.o ../src/config/default/peripheral/flexcom/usart/plib_flexcom2_usart.c   -mdtcm=0x40000 -mitcm=0x20000 -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}/samrh71c" ${PACK_COMMON_OPTIONS} 
+	
 ${OBJECTDIR}/_ext/1666157715/plib_matrix.o: ../src/config/default/peripheral/matrix/plib_matrix.c  .generated_files/flags/default/8d62e7506cef7bb2f4b7aca099d57479425a50d3 .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
 	@${MKDIR} "${OBJECTDIR}/_ext/1666157715" 
 	@${RM} ${OBJECTDIR}/_ext/1666157715/plib_matrix.o.d 
@@ -139,6 +169,12 @@ ${OBJECTDIR}/_ext/60177924/plib_pio.o: ../src/config/default/peripheral/pio/plib
 	@${RM} ${OBJECTDIR}/_ext/60177924/plib_pio.o.d 
 	@${RM} ${OBJECTDIR}/_ext/60177924/plib_pio.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -fdata-sections -O1 -fno-common -I"../src" -I"../src/config/default" -I"../src/packs/ATSAMRH71F20C_DFP" -I"../src/packs/CMSIS/" -I"../src/packs/CMSIS/CMSIS/Core/Include" -MP -MMD -MF "${OBJECTDIR}/_ext/60177924/plib_pio.o.d" -o ${OBJECTDIR}/_ext/60177924/plib_pio.o ../src/config/default/peripheral/pio/plib_pio.c   -mdtcm=0x40000 -mitcm=0x20000 -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}/samrh71c" ${PACK_COMMON_OPTIONS} 
+	
+${OBJECTDIR}/_ext/2003650513/plib_xdmac.o: ../src/config/default/peripheral/xdmac/plib_xdmac.c  .generated_files/flags/default/5ef2d7e35d7df9d291ae49347f3abdea32aa03b4 .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
+	@${MKDIR} "${OBJECTDIR}/_ext/2003650513" 
+	@${RM} ${OBJECTDIR}/_ext/2003650513/plib_xdmac.o.d 
+	@${RM} ${OBJECTDIR}/_ext/2003650513/plib_xdmac.o 
+	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -fdata-sections -O1 -fno-common -I"../src" -I"../src/config/default" -I"../src/packs/ATSAMRH71F20C_DFP" -I"../src/packs/CMSIS/" -I"../src/packs/CMSIS/CMSIS/Core/Include" -MP -MMD -MF "${OBJECTDIR}/_ext/2003650513/plib_xdmac.o.d" -o ${OBJECTDIR}/_ext/2003650513/plib_xdmac.o ../src/config/default/peripheral/xdmac/plib_xdmac.c   -mdtcm=0x40000 -mitcm=0x20000 -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}/samrh71c" ${PACK_COMMON_OPTIONS} 
 	
 ${OBJECTDIR}/_ext/163028504/xc32_monitor.o: ../src/config/default/stdio/xc32_monitor.c  .generated_files/flags/default/eea1ada2a2b6bcc2d10e9e982d455ae94285cc26 .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
 	@${MKDIR} "${OBJECTDIR}/_ext/163028504" 
@@ -188,48 +224,6 @@ ${OBJECTDIR}/_ext/328528262/ip1553_rt.o: C:/Users/User/Documents/research/SAMRH7
 	@${RM} ${OBJECTDIR}/_ext/328528262/ip1553_rt.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -fdata-sections -O1 -fno-common -I"../src" -I"../src/config/default" -I"../src/packs/ATSAMRH71F20C_DFP" -I"../src/packs/CMSIS/" -I"../src/packs/CMSIS/CMSIS/Core/Include" -MP -MMD -MF "${OBJECTDIR}/_ext/328528262/ip1553_rt.o.d" -o ${OBJECTDIR}/_ext/328528262/ip1553_rt.o C:/Users/User/Documents/research/SAMRH71-1553/src/usr/ip1553_rt.c   -mdtcm=0x40000 -mitcm=0x20000 -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}/samrh71c" ${PACK_COMMON_OPTIONS} 
 	
-${OBJECTDIR}/_ext/1360937237/main.o: ../src/main.c  .generated_files/flags/default/227b9cd92bbecbe2e5714fb4e69bbbf06df01558 .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
-	@${MKDIR} "${OBJECTDIR}/_ext/1360937237" 
-	@${RM} ${OBJECTDIR}/_ext/1360937237/main.o.d 
-	@${RM} ${OBJECTDIR}/_ext/1360937237/main.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -fdata-sections -O1 -fno-common -I"../src" -I"../src/config/default" -I"../src/packs/ATSAMRH71F20C_DFP" -I"../src/packs/CMSIS/" -I"../src/packs/CMSIS/CMSIS/Core/Include" -MP -MMD -MF "${OBJECTDIR}/_ext/1360937237/main.o.d" -o ${OBJECTDIR}/_ext/1360937237/main.o ../src/main.c   -mdtcm=0x40000 -mitcm=0x20000 -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}/samrh71c" ${PACK_COMMON_OPTIONS} 
-	
-${OBJECTDIR}/_ext/1818436620/plib_flexcom3_usart.o: ../src/config/default/peripheral/flexcom/usart/plib_flexcom3_usart.c  .generated_files/flags/default/2595e3de2a381a5047d11fe31cd8d9cb1289e0e3 .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
-	@${MKDIR} "${OBJECTDIR}/_ext/1818436620" 
-	@${RM} ${OBJECTDIR}/_ext/1818436620/plib_flexcom3_usart.o.d 
-	@${RM} ${OBJECTDIR}/_ext/1818436620/plib_flexcom3_usart.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -fdata-sections -O1 -fno-common -I"../src" -I"../src/config/default" -I"../src/packs/ATSAMRH71F20C_DFP" -I"../src/packs/CMSIS/" -I"../src/packs/CMSIS/CMSIS/Core/Include" -MP -MMD -MF "${OBJECTDIR}/_ext/1818436620/plib_flexcom3_usart.o.d" -o ${OBJECTDIR}/_ext/1818436620/plib_flexcom3_usart.o ../src/config/default/peripheral/flexcom/usart/plib_flexcom3_usart.c   -mdtcm=0x40000 -mitcm=0x20000 -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}/samrh71c" ${PACK_COMMON_OPTIONS} 
-	
-${OBJECTDIR}/_ext/1818436620/plib_flexcom4_usart.o: ../src/config/default/peripheral/flexcom/usart/plib_flexcom4_usart.c  .generated_files/flags/default/7c18d61128d201dfb087ddfb6bc5e45c8e51710b .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
-	@${MKDIR} "${OBJECTDIR}/_ext/1818436620" 
-	@${RM} ${OBJECTDIR}/_ext/1818436620/plib_flexcom4_usart.o.d 
-	@${RM} ${OBJECTDIR}/_ext/1818436620/plib_flexcom4_usart.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -fdata-sections -O1 -fno-common -I"../src" -I"../src/config/default" -I"../src/packs/ATSAMRH71F20C_DFP" -I"../src/packs/CMSIS/" -I"../src/packs/CMSIS/CMSIS/Core/Include" -MP -MMD -MF "${OBJECTDIR}/_ext/1818436620/plib_flexcom4_usart.o.d" -o ${OBJECTDIR}/_ext/1818436620/plib_flexcom4_usart.o ../src/config/default/peripheral/flexcom/usart/plib_flexcom4_usart.c   -mdtcm=0x40000 -mitcm=0x20000 -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}/samrh71c" ${PACK_COMMON_OPTIONS} 
-	
-${OBJECTDIR}/_ext/1818436620/plib_flexcom5_usart.o: ../src/config/default/peripheral/flexcom/usart/plib_flexcom5_usart.c  .generated_files/flags/default/b6ab98400d037aaf9d02f26a57b6a44059a54079 .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
-	@${MKDIR} "${OBJECTDIR}/_ext/1818436620" 
-	@${RM} ${OBJECTDIR}/_ext/1818436620/plib_flexcom5_usart.o.d 
-	@${RM} ${OBJECTDIR}/_ext/1818436620/plib_flexcom5_usart.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -fdata-sections -O1 -fno-common -I"../src" -I"../src/config/default" -I"../src/packs/ATSAMRH71F20C_DFP" -I"../src/packs/CMSIS/" -I"../src/packs/CMSIS/CMSIS/Core/Include" -MP -MMD -MF "${OBJECTDIR}/_ext/1818436620/plib_flexcom5_usart.o.d" -o ${OBJECTDIR}/_ext/1818436620/plib_flexcom5_usart.o ../src/config/default/peripheral/flexcom/usart/plib_flexcom5_usart.c   -mdtcm=0x40000 -mitcm=0x20000 -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}/samrh71c" ${PACK_COMMON_OPTIONS} 
-	
-${OBJECTDIR}/_ext/1818436620/plib_flexcom0_usart.o: ../src/config/default/peripheral/flexcom/usart/plib_flexcom0_usart.c  .generated_files/flags/default/eb0fa98d73858650c5e30157c167ff03ac9156c6 .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
-	@${MKDIR} "${OBJECTDIR}/_ext/1818436620" 
-	@${RM} ${OBJECTDIR}/_ext/1818436620/plib_flexcom0_usart.o.d 
-	@${RM} ${OBJECTDIR}/_ext/1818436620/plib_flexcom0_usart.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -fdata-sections -O1 -fno-common -I"../src" -I"../src/config/default" -I"../src/packs/ATSAMRH71F20C_DFP" -I"../src/packs/CMSIS/" -I"../src/packs/CMSIS/CMSIS/Core/Include" -MP -MMD -MF "${OBJECTDIR}/_ext/1818436620/plib_flexcom0_usart.o.d" -o ${OBJECTDIR}/_ext/1818436620/plib_flexcom0_usart.o ../src/config/default/peripheral/flexcom/usart/plib_flexcom0_usart.c   -mdtcm=0x40000 -mitcm=0x20000 -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}/samrh71c" ${PACK_COMMON_OPTIONS} 
-	
-${OBJECTDIR}/_ext/1818436620/plib_flexcom2_usart.o: ../src/config/default/peripheral/flexcom/usart/plib_flexcom2_usart.c  .generated_files/flags/default/87f017bda07b307f718cb6da5515d80daf691316 .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
-	@${MKDIR} "${OBJECTDIR}/_ext/1818436620" 
-	@${RM} ${OBJECTDIR}/_ext/1818436620/plib_flexcom2_usart.o.d 
-	@${RM} ${OBJECTDIR}/_ext/1818436620/plib_flexcom2_usart.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -fdata-sections -O1 -fno-common -I"../src" -I"../src/config/default" -I"../src/packs/ATSAMRH71F20C_DFP" -I"../src/packs/CMSIS/" -I"../src/packs/CMSIS/CMSIS/Core/Include" -MP -MMD -MF "${OBJECTDIR}/_ext/1818436620/plib_flexcom2_usart.o.d" -o ${OBJECTDIR}/_ext/1818436620/plib_flexcom2_usart.o ../src/config/default/peripheral/flexcom/usart/plib_flexcom2_usart.c   -mdtcm=0x40000 -mitcm=0x20000 -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}/samrh71c" ${PACK_COMMON_OPTIONS} 
-	
-${OBJECTDIR}/_ext/2003650513/plib_xdmac.o: ../src/config/default/peripheral/xdmac/plib_xdmac.c  .generated_files/flags/default/5ef2d7e35d7df9d291ae49347f3abdea32aa03b4 .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
-	@${MKDIR} "${OBJECTDIR}/_ext/2003650513" 
-	@${RM} ${OBJECTDIR}/_ext/2003650513/plib_xdmac.o.d 
-	@${RM} ${OBJECTDIR}/_ext/2003650513/plib_xdmac.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -fdata-sections -O1 -fno-common -I"../src" -I"../src/config/default" -I"../src/packs/ATSAMRH71F20C_DFP" -I"../src/packs/CMSIS/" -I"../src/packs/CMSIS/CMSIS/Core/Include" -MP -MMD -MF "${OBJECTDIR}/_ext/2003650513/plib_xdmac.o.d" -o ${OBJECTDIR}/_ext/2003650513/plib_xdmac.o ../src/config/default/peripheral/xdmac/plib_xdmac.c   -mdtcm=0x40000 -mitcm=0x20000 -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}/samrh71c" ${PACK_COMMON_OPTIONS} 
-	
 ${OBJECTDIR}/_ext/328528262/FLEXCOM_dma_objects.o: C:/Users/User/Documents/research/SAMRH71-1553/src/usr/FLEXCOM_dma_objects.c  .generated_files/flags/default/1f3a13bda7705ae7331cc97bd68071259d138918 .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
 	@${MKDIR} "${OBJECTDIR}/_ext/328528262" 
 	@${RM} ${OBJECTDIR}/_ext/328528262/FLEXCOM_dma_objects.o.d 
@@ -247,6 +241,12 @@ ${OBJECTDIR}/_ext/328528262/ip1553_app.o: C:/Users/User/Documents/research/SAMRH
 	@${RM} ${OBJECTDIR}/_ext/328528262/ip1553_app.o.d 
 	@${RM} ${OBJECTDIR}/_ext/328528262/ip1553_app.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -fdata-sections -O1 -fno-common -I"../src" -I"../src/config/default" -I"../src/packs/ATSAMRH71F20C_DFP" -I"../src/packs/CMSIS/" -I"../src/packs/CMSIS/CMSIS/Core/Include" -MP -MMD -MF "${OBJECTDIR}/_ext/328528262/ip1553_app.o.d" -o ${OBJECTDIR}/_ext/328528262/ip1553_app.o C:/Users/User/Documents/research/SAMRH71-1553/src/usr/ip1553_app.c   -mdtcm=0x40000 -mitcm=0x20000 -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}/samrh71c" ${PACK_COMMON_OPTIONS} 
+	
+${OBJECTDIR}/_ext/1360937237/main.o: ../src/main.c  .generated_files/flags/default/227b9cd92bbecbe2e5714fb4e69bbbf06df01558 .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
+	@${MKDIR} "${OBJECTDIR}/_ext/1360937237" 
+	@${RM} ${OBJECTDIR}/_ext/1360937237/main.o.d 
+	@${RM} ${OBJECTDIR}/_ext/1360937237/main.o 
+	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -fdata-sections -O1 -fno-common -I"../src" -I"../src/config/default" -I"../src/packs/ATSAMRH71F20C_DFP" -I"../src/packs/CMSIS/" -I"../src/packs/CMSIS/CMSIS/Core/Include" -MP -MMD -MF "${OBJECTDIR}/_ext/1360937237/main.o.d" -o ${OBJECTDIR}/_ext/1360937237/main.o ../src/main.c   -mdtcm=0x40000 -mitcm=0x20000 -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}/samrh71c" ${PACK_COMMON_OPTIONS} 
 	
 else
 ${OBJECTDIR}/_ext/1863587092/plib_ip1553.o: ../src/config/default/peripheral/1553/plib_ip1553.c  .generated_files/flags/default/18f8f069a07f5175ad7d243f26a5ff21b7e7df4a .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
@@ -267,6 +267,36 @@ ${OBJECTDIR}/_ext/1818436620/plib_flexcom1_usart.o: ../src/config/default/periph
 	@${RM} ${OBJECTDIR}/_ext/1818436620/plib_flexcom1_usart.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -fdata-sections -O1 -fno-common -I"../src" -I"../src/config/default" -I"../src/packs/ATSAMRH71F20C_DFP" -I"../src/packs/CMSIS/" -I"../src/packs/CMSIS/CMSIS/Core/Include" -MP -MMD -MF "${OBJECTDIR}/_ext/1818436620/plib_flexcom1_usart.o.d" -o ${OBJECTDIR}/_ext/1818436620/plib_flexcom1_usart.o ../src/config/default/peripheral/flexcom/usart/plib_flexcom1_usart.c   -mdtcm=0x40000 -mitcm=0x20000 -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}/samrh71c" ${PACK_COMMON_OPTIONS} 
 	
+${OBJECTDIR}/_ext/1818436620/plib_flexcom3_usart.o: ../src/config/default/peripheral/flexcom/usart/plib_flexcom3_usart.c  .generated_files/flags/default/aad7afc5d05c0f1308d14b643bf43872c98844ad .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
+	@${MKDIR} "${OBJECTDIR}/_ext/1818436620" 
+	@${RM} ${OBJECTDIR}/_ext/1818436620/plib_flexcom3_usart.o.d 
+	@${RM} ${OBJECTDIR}/_ext/1818436620/plib_flexcom3_usart.o 
+	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -fdata-sections -O1 -fno-common -I"../src" -I"../src/config/default" -I"../src/packs/ATSAMRH71F20C_DFP" -I"../src/packs/CMSIS/" -I"../src/packs/CMSIS/CMSIS/Core/Include" -MP -MMD -MF "${OBJECTDIR}/_ext/1818436620/plib_flexcom3_usart.o.d" -o ${OBJECTDIR}/_ext/1818436620/plib_flexcom3_usart.o ../src/config/default/peripheral/flexcom/usart/plib_flexcom3_usart.c   -mdtcm=0x40000 -mitcm=0x20000 -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}/samrh71c" ${PACK_COMMON_OPTIONS} 
+	
+${OBJECTDIR}/_ext/1818436620/plib_flexcom4_usart.o: ../src/config/default/peripheral/flexcom/usart/plib_flexcom4_usart.c  .generated_files/flags/default/447d4be9839305b4e28a7f148064ec81bd0d7634 .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
+	@${MKDIR} "${OBJECTDIR}/_ext/1818436620" 
+	@${RM} ${OBJECTDIR}/_ext/1818436620/plib_flexcom4_usart.o.d 
+	@${RM} ${OBJECTDIR}/_ext/1818436620/plib_flexcom4_usart.o 
+	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -fdata-sections -O1 -fno-common -I"../src" -I"../src/config/default" -I"../src/packs/ATSAMRH71F20C_DFP" -I"../src/packs/CMSIS/" -I"../src/packs/CMSIS/CMSIS/Core/Include" -MP -MMD -MF "${OBJECTDIR}/_ext/1818436620/plib_flexcom4_usart.o.d" -o ${OBJECTDIR}/_ext/1818436620/plib_flexcom4_usart.o ../src/config/default/peripheral/flexcom/usart/plib_flexcom4_usart.c   -mdtcm=0x40000 -mitcm=0x20000 -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}/samrh71c" ${PACK_COMMON_OPTIONS} 
+	
+${OBJECTDIR}/_ext/1818436620/plib_flexcom5_usart.o: ../src/config/default/peripheral/flexcom/usart/plib_flexcom5_usart.c  .generated_files/flags/default/7538a2fbf437d2f7de0e3ba25add57d933e6c86 .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
+	@${MKDIR} "${OBJECTDIR}/_ext/1818436620" 
+	@${RM} ${OBJECTDIR}/_ext/1818436620/plib_flexcom5_usart.o.d 
+	@${RM} ${OBJECTDIR}/_ext/1818436620/plib_flexcom5_usart.o 
+	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -fdata-sections -O1 -fno-common -I"../src" -I"../src/config/default" -I"../src/packs/ATSAMRH71F20C_DFP" -I"../src/packs/CMSIS/" -I"../src/packs/CMSIS/CMSIS/Core/Include" -MP -MMD -MF "${OBJECTDIR}/_ext/1818436620/plib_flexcom5_usart.o.d" -o ${OBJECTDIR}/_ext/1818436620/plib_flexcom5_usart.o ../src/config/default/peripheral/flexcom/usart/plib_flexcom5_usart.c   -mdtcm=0x40000 -mitcm=0x20000 -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}/samrh71c" ${PACK_COMMON_OPTIONS} 
+	
+${OBJECTDIR}/_ext/1818436620/plib_flexcom0_usart.o: ../src/config/default/peripheral/flexcom/usart/plib_flexcom0_usart.c  .generated_files/flags/default/75631026f3ff02de5ce2d2ba15606ed60092865 .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
+	@${MKDIR} "${OBJECTDIR}/_ext/1818436620" 
+	@${RM} ${OBJECTDIR}/_ext/1818436620/plib_flexcom0_usart.o.d 
+	@${RM} ${OBJECTDIR}/_ext/1818436620/plib_flexcom0_usart.o 
+	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -fdata-sections -O1 -fno-common -I"../src" -I"../src/config/default" -I"../src/packs/ATSAMRH71F20C_DFP" -I"../src/packs/CMSIS/" -I"../src/packs/CMSIS/CMSIS/Core/Include" -MP -MMD -MF "${OBJECTDIR}/_ext/1818436620/plib_flexcom0_usart.o.d" -o ${OBJECTDIR}/_ext/1818436620/plib_flexcom0_usart.o ../src/config/default/peripheral/flexcom/usart/plib_flexcom0_usart.c   -mdtcm=0x40000 -mitcm=0x20000 -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}/samrh71c" ${PACK_COMMON_OPTIONS} 
+	
+${OBJECTDIR}/_ext/1818436620/plib_flexcom2_usart.o: ../src/config/default/peripheral/flexcom/usart/plib_flexcom2_usart.c  .generated_files/flags/default/14744f01ca6f06a707afd10749e6e9490286a706 .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
+	@${MKDIR} "${OBJECTDIR}/_ext/1818436620" 
+	@${RM} ${OBJECTDIR}/_ext/1818436620/plib_flexcom2_usart.o.d 
+	@${RM} ${OBJECTDIR}/_ext/1818436620/plib_flexcom2_usart.o 
+	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -fdata-sections -O1 -fno-common -I"../src" -I"../src/config/default" -I"../src/packs/ATSAMRH71F20C_DFP" -I"../src/packs/CMSIS/" -I"../src/packs/CMSIS/CMSIS/Core/Include" -MP -MMD -MF "${OBJECTDIR}/_ext/1818436620/plib_flexcom2_usart.o.d" -o ${OBJECTDIR}/_ext/1818436620/plib_flexcom2_usart.o ../src/config/default/peripheral/flexcom/usart/plib_flexcom2_usart.c   -mdtcm=0x40000 -mitcm=0x20000 -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}/samrh71c" ${PACK_COMMON_OPTIONS} 
+	
 ${OBJECTDIR}/_ext/1666157715/plib_matrix.o: ../src/config/default/peripheral/matrix/plib_matrix.c  .generated_files/flags/default/b2d6290717abbb7060b6b16a39ea14a48104fa81 .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
 	@${MKDIR} "${OBJECTDIR}/_ext/1666157715" 
 	@${RM} ${OBJECTDIR}/_ext/1666157715/plib_matrix.o.d 
@@ -284,6 +314,12 @@ ${OBJECTDIR}/_ext/60177924/plib_pio.o: ../src/config/default/peripheral/pio/plib
 	@${RM} ${OBJECTDIR}/_ext/60177924/plib_pio.o.d 
 	@${RM} ${OBJECTDIR}/_ext/60177924/plib_pio.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -fdata-sections -O1 -fno-common -I"../src" -I"../src/config/default" -I"../src/packs/ATSAMRH71F20C_DFP" -I"../src/packs/CMSIS/" -I"../src/packs/CMSIS/CMSIS/Core/Include" -MP -MMD -MF "${OBJECTDIR}/_ext/60177924/plib_pio.o.d" -o ${OBJECTDIR}/_ext/60177924/plib_pio.o ../src/config/default/peripheral/pio/plib_pio.c   -mdtcm=0x40000 -mitcm=0x20000 -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}/samrh71c" ${PACK_COMMON_OPTIONS} 
+	
+${OBJECTDIR}/_ext/2003650513/plib_xdmac.o: ../src/config/default/peripheral/xdmac/plib_xdmac.c  .generated_files/flags/default/63d5508c13e3ded9a2a8362b8354e449c9a916bf .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
+	@${MKDIR} "${OBJECTDIR}/_ext/2003650513" 
+	@${RM} ${OBJECTDIR}/_ext/2003650513/plib_xdmac.o.d 
+	@${RM} ${OBJECTDIR}/_ext/2003650513/plib_xdmac.o 
+	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -fdata-sections -O1 -fno-common -I"../src" -I"../src/config/default" -I"../src/packs/ATSAMRH71F20C_DFP" -I"../src/packs/CMSIS/" -I"../src/packs/CMSIS/CMSIS/Core/Include" -MP -MMD -MF "${OBJECTDIR}/_ext/2003650513/plib_xdmac.o.d" -o ${OBJECTDIR}/_ext/2003650513/plib_xdmac.o ../src/config/default/peripheral/xdmac/plib_xdmac.c   -mdtcm=0x40000 -mitcm=0x20000 -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}/samrh71c" ${PACK_COMMON_OPTIONS} 
 	
 ${OBJECTDIR}/_ext/163028504/xc32_monitor.o: ../src/config/default/stdio/xc32_monitor.c  .generated_files/flags/default/7eb8d85519b3d59200b9468245cca661fa3ce578 .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
 	@${MKDIR} "${OBJECTDIR}/_ext/163028504" 
@@ -333,48 +369,6 @@ ${OBJECTDIR}/_ext/328528262/ip1553_rt.o: C:/Users/User/Documents/research/SAMRH7
 	@${RM} ${OBJECTDIR}/_ext/328528262/ip1553_rt.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -fdata-sections -O1 -fno-common -I"../src" -I"../src/config/default" -I"../src/packs/ATSAMRH71F20C_DFP" -I"../src/packs/CMSIS/" -I"../src/packs/CMSIS/CMSIS/Core/Include" -MP -MMD -MF "${OBJECTDIR}/_ext/328528262/ip1553_rt.o.d" -o ${OBJECTDIR}/_ext/328528262/ip1553_rt.o C:/Users/User/Documents/research/SAMRH71-1553/src/usr/ip1553_rt.c   -mdtcm=0x40000 -mitcm=0x20000 -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}/samrh71c" ${PACK_COMMON_OPTIONS} 
 	
-${OBJECTDIR}/_ext/1360937237/main.o: ../src/main.c  .generated_files/flags/default/fd04ce82978b87b3b372164dd5c1912005689223 .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
-	@${MKDIR} "${OBJECTDIR}/_ext/1360937237" 
-	@${RM} ${OBJECTDIR}/_ext/1360937237/main.o.d 
-	@${RM} ${OBJECTDIR}/_ext/1360937237/main.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -fdata-sections -O1 -fno-common -I"../src" -I"../src/config/default" -I"../src/packs/ATSAMRH71F20C_DFP" -I"../src/packs/CMSIS/" -I"../src/packs/CMSIS/CMSIS/Core/Include" -MP -MMD -MF "${OBJECTDIR}/_ext/1360937237/main.o.d" -o ${OBJECTDIR}/_ext/1360937237/main.o ../src/main.c   -mdtcm=0x40000 -mitcm=0x20000 -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}/samrh71c" ${PACK_COMMON_OPTIONS} 
-	
-${OBJECTDIR}/_ext/1818436620/plib_flexcom3_usart.o: ../src/config/default/peripheral/flexcom/usart/plib_flexcom3_usart.c  .generated_files/flags/default/aad7afc5d05c0f1308d14b643bf43872c98844ad .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
-	@${MKDIR} "${OBJECTDIR}/_ext/1818436620" 
-	@${RM} ${OBJECTDIR}/_ext/1818436620/plib_flexcom3_usart.o.d 
-	@${RM} ${OBJECTDIR}/_ext/1818436620/plib_flexcom3_usart.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -fdata-sections -O1 -fno-common -I"../src" -I"../src/config/default" -I"../src/packs/ATSAMRH71F20C_DFP" -I"../src/packs/CMSIS/" -I"../src/packs/CMSIS/CMSIS/Core/Include" -MP -MMD -MF "${OBJECTDIR}/_ext/1818436620/plib_flexcom3_usart.o.d" -o ${OBJECTDIR}/_ext/1818436620/plib_flexcom3_usart.o ../src/config/default/peripheral/flexcom/usart/plib_flexcom3_usart.c   -mdtcm=0x40000 -mitcm=0x20000 -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}/samrh71c" ${PACK_COMMON_OPTIONS} 
-	
-${OBJECTDIR}/_ext/1818436620/plib_flexcom4_usart.o: ../src/config/default/peripheral/flexcom/usart/plib_flexcom4_usart.c  .generated_files/flags/default/447d4be9839305b4e28a7f148064ec81bd0d7634 .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
-	@${MKDIR} "${OBJECTDIR}/_ext/1818436620" 
-	@${RM} ${OBJECTDIR}/_ext/1818436620/plib_flexcom4_usart.o.d 
-	@${RM} ${OBJECTDIR}/_ext/1818436620/plib_flexcom4_usart.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -fdata-sections -O1 -fno-common -I"../src" -I"../src/config/default" -I"../src/packs/ATSAMRH71F20C_DFP" -I"../src/packs/CMSIS/" -I"../src/packs/CMSIS/CMSIS/Core/Include" -MP -MMD -MF "${OBJECTDIR}/_ext/1818436620/plib_flexcom4_usart.o.d" -o ${OBJECTDIR}/_ext/1818436620/plib_flexcom4_usart.o ../src/config/default/peripheral/flexcom/usart/plib_flexcom4_usart.c   -mdtcm=0x40000 -mitcm=0x20000 -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}/samrh71c" ${PACK_COMMON_OPTIONS} 
-	
-${OBJECTDIR}/_ext/1818436620/plib_flexcom5_usart.o: ../src/config/default/peripheral/flexcom/usart/plib_flexcom5_usart.c  .generated_files/flags/default/7538a2fbf437d2f7de0e3ba25add57d933e6c86 .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
-	@${MKDIR} "${OBJECTDIR}/_ext/1818436620" 
-	@${RM} ${OBJECTDIR}/_ext/1818436620/plib_flexcom5_usart.o.d 
-	@${RM} ${OBJECTDIR}/_ext/1818436620/plib_flexcom5_usart.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -fdata-sections -O1 -fno-common -I"../src" -I"../src/config/default" -I"../src/packs/ATSAMRH71F20C_DFP" -I"../src/packs/CMSIS/" -I"../src/packs/CMSIS/CMSIS/Core/Include" -MP -MMD -MF "${OBJECTDIR}/_ext/1818436620/plib_flexcom5_usart.o.d" -o ${OBJECTDIR}/_ext/1818436620/plib_flexcom5_usart.o ../src/config/default/peripheral/flexcom/usart/plib_flexcom5_usart.c   -mdtcm=0x40000 -mitcm=0x20000 -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}/samrh71c" ${PACK_COMMON_OPTIONS} 
-	
-${OBJECTDIR}/_ext/1818436620/plib_flexcom0_usart.o: ../src/config/default/peripheral/flexcom/usart/plib_flexcom0_usart.c  .generated_files/flags/default/75631026f3ff02de5ce2d2ba15606ed60092865 .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
-	@${MKDIR} "${OBJECTDIR}/_ext/1818436620" 
-	@${RM} ${OBJECTDIR}/_ext/1818436620/plib_flexcom0_usart.o.d 
-	@${RM} ${OBJECTDIR}/_ext/1818436620/plib_flexcom0_usart.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -fdata-sections -O1 -fno-common -I"../src" -I"../src/config/default" -I"../src/packs/ATSAMRH71F20C_DFP" -I"../src/packs/CMSIS/" -I"../src/packs/CMSIS/CMSIS/Core/Include" -MP -MMD -MF "${OBJECTDIR}/_ext/1818436620/plib_flexcom0_usart.o.d" -o ${OBJECTDIR}/_ext/1818436620/plib_flexcom0_usart.o ../src/config/default/peripheral/flexcom/usart/plib_flexcom0_usart.c   -mdtcm=0x40000 -mitcm=0x20000 -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}/samrh71c" ${PACK_COMMON_OPTIONS} 
-	
-${OBJECTDIR}/_ext/1818436620/plib_flexcom2_usart.o: ../src/config/default/peripheral/flexcom/usart/plib_flexcom2_usart.c  .generated_files/flags/default/14744f01ca6f06a707afd10749e6e9490286a706 .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
-	@${MKDIR} "${OBJECTDIR}/_ext/1818436620" 
-	@${RM} ${OBJECTDIR}/_ext/1818436620/plib_flexcom2_usart.o.d 
-	@${RM} ${OBJECTDIR}/_ext/1818436620/plib_flexcom2_usart.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -fdata-sections -O1 -fno-common -I"../src" -I"../src/config/default" -I"../src/packs/ATSAMRH71F20C_DFP" -I"../src/packs/CMSIS/" -I"../src/packs/CMSIS/CMSIS/Core/Include" -MP -MMD -MF "${OBJECTDIR}/_ext/1818436620/plib_flexcom2_usart.o.d" -o ${OBJECTDIR}/_ext/1818436620/plib_flexcom2_usart.o ../src/config/default/peripheral/flexcom/usart/plib_flexcom2_usart.c   -mdtcm=0x40000 -mitcm=0x20000 -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}/samrh71c" ${PACK_COMMON_OPTIONS} 
-	
-${OBJECTDIR}/_ext/2003650513/plib_xdmac.o: ../src/config/default/peripheral/xdmac/plib_xdmac.c  .generated_files/flags/default/63d5508c13e3ded9a2a8362b8354e449c9a916bf .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
-	@${MKDIR} "${OBJECTDIR}/_ext/2003650513" 
-	@${RM} ${OBJECTDIR}/_ext/2003650513/plib_xdmac.o.d 
-	@${RM} ${OBJECTDIR}/_ext/2003650513/plib_xdmac.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -fdata-sections -O1 -fno-common -I"../src" -I"../src/config/default" -I"../src/packs/ATSAMRH71F20C_DFP" -I"../src/packs/CMSIS/" -I"../src/packs/CMSIS/CMSIS/Core/Include" -MP -MMD -MF "${OBJECTDIR}/_ext/2003650513/plib_xdmac.o.d" -o ${OBJECTDIR}/_ext/2003650513/plib_xdmac.o ../src/config/default/peripheral/xdmac/plib_xdmac.c   -mdtcm=0x40000 -mitcm=0x20000 -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}/samrh71c" ${PACK_COMMON_OPTIONS} 
-	
 ${OBJECTDIR}/_ext/328528262/FLEXCOM_dma_objects.o: C:/Users/User/Documents/research/SAMRH71-1553/src/usr/FLEXCOM_dma_objects.c  .generated_files/flags/default/320a3ad8970b7b386d3fe6f210a5ac256412b0e7 .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
 	@${MKDIR} "${OBJECTDIR}/_ext/328528262" 
 	@${RM} ${OBJECTDIR}/_ext/328528262/FLEXCOM_dma_objects.o.d 
@@ -392,6 +386,12 @@ ${OBJECTDIR}/_ext/328528262/ip1553_app.o: C:/Users/User/Documents/research/SAMRH
 	@${RM} ${OBJECTDIR}/_ext/328528262/ip1553_app.o.d 
 	@${RM} ${OBJECTDIR}/_ext/328528262/ip1553_app.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -fdata-sections -O1 -fno-common -I"../src" -I"../src/config/default" -I"../src/packs/ATSAMRH71F20C_DFP" -I"../src/packs/CMSIS/" -I"../src/packs/CMSIS/CMSIS/Core/Include" -MP -MMD -MF "${OBJECTDIR}/_ext/328528262/ip1553_app.o.d" -o ${OBJECTDIR}/_ext/328528262/ip1553_app.o C:/Users/User/Documents/research/SAMRH71-1553/src/usr/ip1553_app.c   -mdtcm=0x40000 -mitcm=0x20000 -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}/samrh71c" ${PACK_COMMON_OPTIONS} 
+	
+${OBJECTDIR}/_ext/1360937237/main.o: ../src/main.c  .generated_files/flags/default/fd04ce82978b87b3b372164dd5c1912005689223 .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
+	@${MKDIR} "${OBJECTDIR}/_ext/1360937237" 
+	@${RM} ${OBJECTDIR}/_ext/1360937237/main.o.d 
+	@${RM} ${OBJECTDIR}/_ext/1360937237/main.o 
+	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -fdata-sections -O1 -fno-common -I"../src" -I"../src/config/default" -I"../src/packs/ATSAMRH71F20C_DFP" -I"../src/packs/CMSIS/" -I"../src/packs/CMSIS/CMSIS/Core/Include" -MP -MMD -MF "${OBJECTDIR}/_ext/1360937237/main.o.d" -o ${OBJECTDIR}/_ext/1360937237/main.o ../src/main.c   -mdtcm=0x40000 -mitcm=0x20000 -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}/samrh71c" ${PACK_COMMON_OPTIONS} 
 	
 endif
 

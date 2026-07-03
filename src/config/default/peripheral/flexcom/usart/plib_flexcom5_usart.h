@@ -79,19 +79,13 @@ bool FLEXCOM5_USART_Write( void *buffer, const size_t size );
 
 bool FLEXCOM5_USART_Read( void *buffer, const size_t size );
 
-bool FLEXCOM5_USART_WriteIsBusy( void );
+uint8_t FLEXCOM5_USART_ReadByte(void);
 
-bool FLEXCOM5_USART_ReadIsBusy( void );
+void FLEXCOM5_USART_WriteByte(uint8_t data);
 
-size_t FLEXCOM5_USART_WriteCountGet( void );
+bool FLEXCOM5_USART_TransmitterIsReady( void );
 
-size_t FLEXCOM5_USART_ReadCountGet( void );
-
-bool FLEXCOM5_USART_ReadAbort(void);
-
-void FLEXCOM5_USART_WriteCallbackRegister( FLEXCOM_USART_CALLBACK callback, uintptr_t context );
-
-void FLEXCOM5_USART_ReadCallbackRegister( FLEXCOM_USART_CALLBACK callback, uintptr_t context );
+bool FLEXCOM5_USART_ReceiverIsReady( void );
 
 bool FLEXCOM5_USART_TransmitComplete( void );
 

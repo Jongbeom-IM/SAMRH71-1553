@@ -52,7 +52,7 @@ int read(int handle, void *buffer, unsigned int len)
     {
         do
         {
-            success = FLEXCOM1_USART_Read(buffer, 1);
+            success = FLEXCOM5_USART_Read(buffer, 1);
         }while( !success);
         nChars = 1;
     }
@@ -66,7 +66,7 @@ int write(int handle, void * buffer, size_t count)
    {
        do
        {
-           success = FLEXCOM1_USART_Write(buffer, count);
+           success = FLEXCOM5_USART_Write(buffer, count);
        }while( !success);
    }
    return (int)count;

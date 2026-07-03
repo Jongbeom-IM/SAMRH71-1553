@@ -103,6 +103,7 @@ build/default/production/_ext/1360937237/main.o: ../src/main.c \
  ../src/config/default/peripheral/flexcom/usart/plib_flexcom0_usart.h \
  ../src/config/default/peripheral/flexcom/usart/plib_flexcom1_usart.h \
  ../src/config/default/peripheral/flexcom/usart/plib_flexcom2_usart.h \
+ ../src/config/default/peripheral/xdmac/plib_xdmac_common.h \
  ../src/usr/default_function.h ../src/usr/ip1553_rt.h \
  ../src/usr/circular_dma.h ../src/usr/FLEXCOM_dma_types.h \
  ../src/config/default/peripheral/xdmac/plib_xdmac.h \
@@ -212,6 +213,7 @@ build/default/production/_ext/1360937237/main.o: ../src/main.c \
 ../src/config/default/peripheral/flexcom/usart/plib_flexcom0_usart.h:
 ../src/config/default/peripheral/flexcom/usart/plib_flexcom1_usart.h:
 ../src/config/default/peripheral/flexcom/usart/plib_flexcom2_usart.h:
+../src/config/default/peripheral/xdmac/plib_xdmac_common.h:
 ../src/usr/default_function.h:
 ../src/usr/ip1553_rt.h:
 ../src/usr/circular_dma.h:

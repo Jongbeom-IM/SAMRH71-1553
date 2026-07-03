@@ -2242,7 +2242,7 @@ data:
       - children:
         - attributes:
             id: core
-            value: 'false'
+            value: 'true'
           type: Dynamic
         type: Values
       type: Boolean
@@ -2253,7 +2253,7 @@ data:
       - children:
         - attributes:
             id: core
-            value: 'true'
+            value: 'false'
           type: Dynamic
         type: Values
       type: Boolean
@@ -2264,7 +2264,7 @@ data:
       - children:
         - attributes:
             id: flexcom5
-            value: 'true'
+            value: 'false'
           type: Dynamic
         type: Values
       type: Boolean
@@ -2297,7 +2297,7 @@ data:
       - children:
         - attributes:
             id: core
-            value: 'true'
+            value: 'false'
           type: Dynamic
         type: Values
       type: Boolean
@@ -2308,7 +2308,7 @@ data:
       - children:
         - attributes:
             id: flexcom5
-            value: 'true'
+            value: 'false'
           type: Dynamic
         type: Values
       type: Boolean
@@ -3575,6 +3575,26 @@ data:
           type: User
         type: Values
       type: Combo
+    XDMAC_CC4_PERID:
+      attributes:
+        id: XDMAC_CC4_PERID
+      children:
+      - children:
+        - attributes:
+            value: FLEXCOM1_Transmit
+          type: User
+        type: Values
+      type: Combo
+    CLK_MCK_PRES:
+      attributes:
+        id: CLK_MCK_PRES
+      children:
+      - children:
+        - attributes:
+            value: '0'
+          type: User
+        type: Values
+      type: KeyValueSet
     XDMAC_CC4_TYPE:
       attributes:
         id: XDMAC_CC4_TYPE
@@ -3670,7 +3690,7 @@ data:
       - children:
         - attributes:
             id: core
-            value: '10'
+            value: '2'
           type: Dynamic
         type: Values
       type: Integer
@@ -3696,16 +3716,6 @@ data:
           type: Dynamic
         type: Values
       type: KeyValueSet
-    XDMAC_CC4_PERID:
-      attributes:
-        id: XDMAC_CC4_PERID
-      children:
-      - children:
-        - attributes:
-            value: FLEXCOM5_Transmit
-          type: User
-        type: Values
-      type: Combo
   userData:
     children:
     - attributes:

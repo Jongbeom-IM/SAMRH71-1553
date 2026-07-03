@@ -1,6 +1,9 @@
 #include "default_function.h"
 #include "definitions.h"
 #include "FLEXCOM_dma_types.h"
+#include "circular_dma.h"
+
+static uint8_t g_initCh5Msg[] = "Hello from XDMAC Channel 5!";
 
 volatile bool SYSTEM_PAUSED = true;
 
@@ -58,6 +61,7 @@ void Button_Callback(PIO_PIN pin, uintptr_t context)
             PrintDmaObjectInfo("FLEXCOM4DmaObj", &FLEXCOM4DmaObj);
             break;
         case PIO_PIN_PC31:
+            CircularDMA_PrintDiagnostics();
             break;
         default:
             break;
@@ -68,14 +72,23 @@ void PlayCallback(PIO_PIN pin, uintptr_t context)
 {
     (void)pin;
     (void)context;  // unused
+    // bool txStarted;
+
     SYSTEM_PAUSED = !SYSTEM_PAUSED;
     printf("System %s\r\n", SYSTEM_PAUSED ? "Paused" : "Running");
 
-    static uint8_t testData[2] = {0xFF, 0xFF};
-    while (XDMAC_ChannelIsBusy(FLEXCOM_TX_XDMAC_CHANNEL)) {}
-    SCB_CleanDCache_by_Addr((uint32_t*)testData, sizeof(testData));
-    XDMAC_ChannelTransfer(FLEXCOM_TX_XDMAC_CHANNEL,
-        (const void*)testData,
-        (const void*)&(FLEXCOM5_REGS->FLEX_US_THR),
-        sizeof(testData));
+    // /* Ensure memory is visible to DMA before starting transfer. */
+    // SCB_CleanDCache_by_Addr((uint32_t*)g_initCh5Msg, (int32_t)sizeof(g_initCh5Msg));
+
+    // txStarted = XDMAC_ChannelTransfer(
+    //     FLEXCOM_TX_XDMAC_CHANNEL,
+    //     g_initCh5Msg,
+    //     (const void*)&(FLEXCOM1_REGS->FLEX_US_THR),
+    //     sizeof(g_initCh5Msg) - 1U
+    // );
+
+    // if (txStarted == false)
+    // {
+    //     printf("FLEXCOM1 TX DMA busy\r\n");
+    // }
 }

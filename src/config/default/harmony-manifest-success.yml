@@ -4,7 +4,7 @@
 
 
 project: SAMRH71
-creation_date: 2026-04-29T21:36:10.439+09:00[Asia/Seoul]    # ISO 8601 format: https://www.w3.org/TR/NOTE-datetime
+creation_date: 2026-05-29T16:46:35.702+09:00[Asia/Seoul]    # ISO 8601 format: https://www.w3.org/TR/NOTE-datetime
 operating_system: Windows 11
 mcc_mode: IDE            # [IDE|Standalone|Headless]
 mcc_version: v5.6.4

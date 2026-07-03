@@ -160,14 +160,14 @@ void XDMAC_Initialize( void )
     xdmacChannelObj[1].inUse = true;
     /* Configure Channel 2 */
     XDMAC_REGS->XDMAC_CHID[2].XDMAC_CC =  (XDMAC_CC_TYPE_PER_TRAN |
-                                            XDMAC_CC_PERID(7U) |
-                                            XDMAC_CC_DSYNC_PER2MEM |
+                                            XDMAC_CC_PERID(6U) |
+                                            XDMAC_CC_DSYNC_MEM2PER |
                                             XDMAC_CC_PROT_PRIVILEGED |
                                             XDMAC_CC_SWREQ_HWR_CONNECTED |
-                                            XDMAC_CC_DAM_INCREMENTED_AM |
-                                            XDMAC_CC_SAM_FIXED_AM |
-                                            XDMAC_CC_SIF_AHB_IF0 |
-                                            XDMAC_CC_DIF_AHB_IF1 |
+                                            XDMAC_CC_DAM_FIXED_AM |
+                                            XDMAC_CC_SAM_INCREMENTED_AM |
+                                            XDMAC_CC_SIF_AHB_IF1 |
+                                            XDMAC_CC_DIF_AHB_IF0 |
                                             XDMAC_CC_DWIDTH_BYTE |
                                             XDMAC_CC_CSIZE_CHK_1 |\
                                             XDMAC_CC_MBSIZE_SINGLE);
@@ -192,7 +192,7 @@ void XDMAC_Initialize( void )
     xdmacChannelObj[3].inUse = true;
     /* Configure Channel 4 */
     XDMAC_REGS->XDMAC_CHID[4].XDMAC_CC =  (XDMAC_CC_TYPE_PER_TRAN |
-                                            XDMAC_CC_PERID(10U) |
+                                            XDMAC_CC_PERID(2U) |
                                             XDMAC_CC_DSYNC_MEM2PER |
                                             XDMAC_CC_PROT_PRIVILEGED |
                                             XDMAC_CC_SWREQ_HWR_CONNECTED |

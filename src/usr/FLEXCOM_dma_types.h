@@ -28,8 +28,8 @@
 // *****************************************************************************
 
 #define BUFFER_SIZE          2048          // 버퍼 크기 (circular)
-#define HEADER_SIZE          2             // 헤더 크기 (예: 0xAA 0x55)
-#define DATA_SIZE              256           // 최대 데이터 길이 (헤더 포함) 
+#define HEADER_SIZE          4             // 패킷 메타데이터: ID(1B) + LEN(1B) + SDQueue offset(2B)
+#define DATA_SIZE              255           // 패킷당 최대 페이로드 바이트 (uint8_t LEN 필드에 맞게 255)
 
 // *****************************************************************************
 // Section: XDMAC Channel Definitions
@@ -77,7 +77,7 @@ typedef struct {
 
 
 typedef struct{
-    uint8_t Pck[BUFFER_SIZE][DATA_SIZE + HEADER_SIZE];
+    uint8_t Pck[BUFFER_SIZE][HEADER_SIZE]; // 패킷 헤더 저장 (채널 ID, 데이터 길이 등)
     uint16_t PckQHead;
     uint16_t PckQTail;
 } PACKET_QUEUE;
@@ -89,6 +89,6 @@ extern FLEXCOM_DMA_OBJECT FLEXCOM0DmaObj;
 extern FLEXCOM_DMA_OBJECT FLEXCOM2DmaObj;
 extern FLEXCOM_DMA_OBJECT FLEXCOM3DmaObj;
 extern FLEXCOM_DMA_OBJECT FLEXCOM4DmaObj;
-extern PACKET_QUEUE FLEXCOM5PacketQueue;
+extern PACKET_QUEUE FLEXCOM1PacketQueue;
 
 #endif /* UART_DMA_TYPES_H */

@@ -31,7 +31,7 @@ FLEXCOM_DMA_OBJECT FLEXCOM2DmaObj = {
     .dataIdx = 0,
     .SDQueueTail = 0,
     .rxChannel = FLEXCOM2_RX_XDMAC_CHANNEL,
-  .rxReg = (const void*)&(FLEXCOM2_REGS->FLEX_US_RHR),
+    .rxReg = (const void*)&(FLEXCOM2_REGS->FLEX_US_RHR),
     .rxByteCount = 0,
     .rxPacketCount = 0,
     .overrunCount = 0,
@@ -43,7 +43,7 @@ FLEXCOM_DMA_OBJECT FLEXCOM3DmaObj = {
     .dataIdx = 0,
     .SDQueueTail = 0,
     .rxChannel = FLEXCOM3_RX_XDMAC_CHANNEL,
-  .rxReg = (const void*)&(FLEXCOM3_REGS->FLEX_US_RHR),
+    .rxReg = (const void*)&(FLEXCOM3_REGS->FLEX_US_RHR),
     .rxByteCount = 0,
     .rxPacketCount = 0,
     .overrunCount = 0,
@@ -55,11 +55,11 @@ FLEXCOM_DMA_OBJECT FLEXCOM4DmaObj = {
     .dataIdx = 0,
     .SDQueueTail = 0,
     .rxChannel = FLEXCOM4_RX_XDMAC_CHANNEL,
-  .rxReg = (const void*)&(FLEXCOM4_REGS->FLEX_US_RHR),
+    .rxReg = (const void*)&(FLEXCOM4_REGS->FLEX_US_RHR),
     .rxByteCount = 0,
     .rxPacketCount = 0,
     .overrunCount = 0,
     .parseErrorCount = 0
 };
 
-PACKET_QUEUE FLEXCOM5PacketQueue = { .PckQHead = 0, .PckQTail = 0 };
+PACKET_QUEUE FLEXCOM1PacketQueue = { .PckQHead = 0, .PckQTail = 0 };

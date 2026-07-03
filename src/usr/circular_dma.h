@@ -36,6 +36,11 @@ bool PacketQueue_Push(FLEXCOM_DMA_OBJECT* obj);
 void DMA_TX_init(void);
 
 /**
+ * @brief DMA 경로 진단 정보 출력
+ */
+void CircularDMA_PrintDiagnostics(void);
+
+/**
  * @brief MemToMem DMA 초기화 (테스트용)
  * 
  * 메모리 간 복사 DMA 설정 - 디버그/테스트용으로 사용
